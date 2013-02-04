@@ -15,8 +15,33 @@ max(cnum)
 mean(cnum)
 
 ## c)
-new_num <- as.numeric(cnum)
-new_num
+cnum <- as.numeric(cnum)
+cnum
 
-# d)
+## d)
+snum <- cnum[cnum>10]
+snum
+
+## e)
+lnum <- cnum>10
+lnum
+
+## f)
+cnum[3] <- NA
+cnum
+lnum <- cnum>10
+lnum
+snum <- cnum[cnum>10]
+snum
+
+## g)
+
+cdate <- c("January-20-2013", "February-25-2013", "February-09-2013")
+cdate
+ddate <- as.Date(cdate, format="%B-%d-%Y")
+class(ddate)
+mode(ddate)
+ddate
+sort(ddate)
+
 
