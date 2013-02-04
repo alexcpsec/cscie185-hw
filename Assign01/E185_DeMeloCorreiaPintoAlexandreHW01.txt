@@ -1,0 +1,79 @@
+Assignment ! - Alexandre de Melo Correia Pinto
+
+Problem 1. When you open R Studio, go to the text editor in the top left corner first.Type all commands in the text editor. Execute one or several commands by highlightingthose commands, holding Ctrl key and hitting Return button. In that way you arepreserving your work as a script. You are advised to read help pages for all R functionsyou will use.a) Ask the system for the current working directory. On your operating system,create a special directory for work with R, something like C:\Code\R or/code/R. Make that directory both readable and writable.
+
+> getwd()[1] "/Users/alexcp/Dropbox/Courses"
+b) Change your working directory to the new directory using appropriate R function.Copy the attached file Smokers.txt to your new directory.> setwd("/Users/alexcp/Dropbox/Courses/Harvard/cscie185-hw/Assign01")> getwd()[1] "/Users/alexcp/Dropbox/Courses/Harvard/cscie185-hw/Assign01"c) Create a vector vv with elements which repeat numbers 1,2,3 five times, usingfunctions rep() and c(). What is the length of you vector. Do not just tell us,please as R to tell you the length. Save that vector into a file in your workingdirectory using function save(). Initially, name your file vv.RData. Try toopen the file with an editor like Vim or notepad. Please do not change anythingin the file.
+
+> vv <- c(rep(1,5), rep(2,5), rep(3,5))> vv [1] 1 1 1 1 1 2 2 2 2 2 3 3 3 3 3> length(vv)[1] 15
+> save("vv", file = "vv.RData")
+$ cat vv.RData 
+?
+r?0??b```b`?bf ??	H02?0p???ʀ$??`B??4q4??x?S?$
+d) Save your vector vv into another file, called vv.txt. This time turn the asciiparameter of save() function to TRUE. Try reading your file. Could you do itthis time?
+
+> save("vv", file = "vv.txt", ascii = TRUE)
+$ cat vv.txt
+RDA2
+A
+2
+134914
+131840
+1026
+1
+262153
+2
+vv
+14
+15
+1
+1
+1
+1
+1
+2
+2
+2
+2
+2
+3
+3
+3
+3
+3
+254
+
+e) Use R function list.files() to list the content of your working directory.
+
+> list.files()[1] "e185_Assign01_Intro_to_R.pdf"            [2] "E185_DeMeloCorreiaPintoAlexandreHW01.txt"[3] "Smokers.txt"                             [4] "vv.RData"                                [5] "vv.txt" 
+f) Point function list.files() to any other directory and assign its result to avariable. What is the class of that variable? (Hint, use function class()). Whatis the structure of variable vv. (Hint, use function str()). What is the mode ofvariable vv. (Hint, use function mode()).
+
+> file_list = list.files(path = "/Users/alexcp/Dropbox/Courses/Harvard")> file_list[1] "Add Course.pdf"               "cscie185-hw"                 [3] "New Student.pdf"              "Syllabus_E185_Spring2013.pdf"> class(file_list)[1] "character"> str(vv) num [1:15] 1 1 1 1 1 2 2 2 2 2 ...> mode(vv)[1] "numeric"
+g) Remove variable vv from your workspace. Next, load that variable from filevv.RData. Verify that you got whatever you stored.
+
+> vv [1] 1 1 1 1 1 2 2 2 2 2 3 3 3 3 3> rm(vv)> vvError: object 'vv' not found> load("vv.RData")> vv [1] 1 1 1 1 1 2 2 2 2 2 3 3 3 3 3
+h) Remove variable vv from your workspace, again. This time, load that variablefrom file vv.txt. Again, verify that you have recovered your variable.
+
+> vv [1] 1 1 1 1 1 2 2 2 2 2 3 3 3 3 3> rm(vv)> vvError: object 'vv' not found> load("vv.txt")> vv [1] 1 1 1 1 1 2 2 2 2 2 3 3 3 3 3
+i) Save the content of your text editor as a file with extension R. You can rerun allcommands in that file as a script, if you want, one day. You might want to edit thefile first, but that is another matter. Provide that file as a part of your submission.
+
+Saved as Problem1.R
+j) Close R Studio. Do not forget to save your workspace. Restart R Studio.Convince yourself that all of your variables are there.
+
+[Workspace loaded from ~/Dropbox/Courses/Harvard/cscie185-hw/Assign01/.RData]> vv [1] 1 1 1 1 1 2 2 2 2 2 3 3 3 3 3> file_list[1] "Add Course.pdf"               "cscie185-hw"                 [3] "New Student.pdf"              "Syllabus_E185_Spring2013.pdf"
+
+-----------------------------------------------
+
+Problem 2. Create a vector num of numbers with 8 randomly ordered values between 1and 20. Use c() function.a) Turn that vector into another vector of characters cnum using functionas.character().
+
+> sample(20, 8)[1]  2 16 14  5  1 19 18 15> num <- c(2, 16, 14,  5,  1, 19, 18, 15)> num[1]  2 16 14  5  1 19 18 15> cnum <- as.character(num)> cnum[1] "2"  "16" "14" "5"  "1"  "19" "18" "15"
+b) Calculate minimum, maximum and mean value of two vectors.
+
+> min(num)[1] 1> max(num)[1] 19> mean(num)[1] 11.25> min(cnum)[1] "1"> max(cnum)[1] "5"> mean(cnum)[1] NAWarning message:In mean.default(cnum) : argument is not numeric or logical: returning NA
+c) Transform vector cnum back into numbers using function as.numeric().Verify that you got numbers back.
+
+> new_num <- as.numeric(cnum)> new_num[1]  2 16 14  5  1 19 18 15
+d) Create another vector snum by selecting only those numbers from vector numwhich are greater than 10.
+
+
+e) Create a logical vector lnum which will tell you whether an entry in vector cnumis greater than 10.f) Set 3rd element of vector cnum to NA. Recreate logical vector lnum and reportits elements. Recreate vector snum by selecting those elements of vector cnumwhich are greater than 10. What was the effect of NA.g) Create a character vector cdate with three dates between January 01, 2013 andMarch 01, 2013. As the format for character representation of dates use “January-01-2013”. Transform that vector into vector ddate of Dates class using functionas.Date() and format "%B-%d-%Y". Please read help for as.Dates(). Whatare the class and mode of vector ddate. Display values of vector ddate. Sortvalues in vector ddate. Provide the information on the order that sortingimposed, in other words ask R to tell once sorted which elements came first,which second, and so on.
