@@ -1,4 +1,4 @@
-Country	PercentSmokes	GDPPerCapita	GDPRank	
+Country	PercentSmokes	GDPPerCapita	GDPRank
 Cuba	40	4,000	146
 Kuwait	37	23,100	49
 Chile	37	12,700	78
@@ -28,7 +28,7 @@ Ethiopia	9	1,000	211
 Peru	10	6,600	119
 Nicaragua	10	3,100	159
 Togo	10	1,700	191
-Sri	Lanka	11	4,700	138
+SriLanka	11	4,700	138
 Ecuador	11	4,500	141
 Niger	11	1,000	215
 Panama	12	8,200	104
