@@ -1,0 +1,37 @@
+HU Extension -- Assignment 02 -- E-185 Big Data Analytics 
+========================================================
+Handed out: 02/15/2013 -- Due by 17:25PM on Friday, 02/22/2013
+-----------------------------------------------------------
+
+#### **Problem 1.** Write an R function that would allow you to generate a matrix (data frame) with `m` columns and `n` rows and populate every column of that matrix with randomly generated values that fall between values `a` and `b`. Choose some arbitrary values for parameters a and b. Use your function to generate a matrix with 4 columns and a reasonably large value of the number of rows `n` , e.g. `1000-2000`. Plot histograms of data in two columns of your matrix and demonstrate to yourself that data are uniformly distributed, between selected values `a` and `b`. We are not performing any statistical tests for “uniformity” of the distribution. Just present data graphically in two different plots or histograms and take a look.
+
+Selecting `a` as `-5` and `b` as `5`, we created the following function
+```{r}
+r_matrix <- function(n, m, a = -5, b = 5) {
+  matrix(runif(n*m, min=a, max=b), nrow = n, ncol = m) 
+}
+```
+
+Creating a matrix with 4 columns and 1500 rows
+
+```{r}
+X <- r_matrix(1500, 4)
+```
+
+Selecting 2 rows to plot the histograms
+
+```{r fig.width=11, fig.height=6}
+par(mfrow = c(1,2))
+hist(X[,1], col = "light blue")
+hist(X[,2], col = "light blue")
+```
+
+#### Problem 2. Try to find a way to present two distributions contained in any two of columns of your matrix on a single plot. To do that you might want to export the distribution data from two columns into two stand-alone vectors of equal length. Plot one distribution first using a call to `plot(x,y1)` function, where vector x contains the “predictor” or the parameter vector with values between `a` and `b` you selected above. To add the next curve (distribution `y2`) try invoking function `lines(x,y2)`. To improve your diagram, present two curves in different color and add labels on x and y axis, as well as the title to your graph. Try adding the distribution from the third column to your graph.
+
+Defining the first column as the "predictor" and the following as y1, y2 and y3
+```{r}
+x <- X[1]
+y1 <- X[2]
+y2 <- X[3]
+y3 <- X[4]
+```
