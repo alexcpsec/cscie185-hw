@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><configuration>
+<property><name>user.name</name><value>hadoop</value></property>
+<property><name>mapred.job.queue.name</name><value>default</value></property>
+<property><name>mapreduce.job.acl-view-job</name><value> </value></property>
+<property><name>mapred.queue.default.acl-administer-jobs</name><value>*</value></property>
+</configuration>

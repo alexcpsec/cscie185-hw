@@ -1,0 +1,279 @@
+2013-03-01 20:50:50,166 INFO org.apache.hadoop.hdfs.server.namenode.NameNode (main): STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting NameNode
+STARTUP_MSG:   host = domU-12-31-39-05-14-17.compute-1.internal/10.241.23.229
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 1.0.3
+STARTUP_MSG:   build = http://aws.amazon.com/elasticmapreduce/ -r 81753a9828927efacf083f483d3b09b72bdbc9bf; compiled by 'Elastic MapReduce' on Thu Feb 21 03:13:22 UTC 2013
+************************************************************/
+2013-03-01 20:50:51,908 INFO org.apache.hadoop.metrics2.impl.MetricsConfig (main): loaded properties from hadoop-metrics2.properties
+2013-03-01 20:50:51,950 INFO org.apache.hadoop.metrics2.sink.cloudwatch.CloudWatchSink (main): Initializing the CloudWatchSink for metrics.
+2013-03-01 20:50:52,588 INFO org.apache.hadoop.metrics2.impl.MetricsSinkAdapter (main): Sink file started
+2013-03-01 20:50:53,885 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter (main): MBean for source MetricsSystem,sub=Stats registered.
+2013-03-01 20:50:53,892 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl (main): Scheduled snapshot period at 300 second(s).
+2013-03-01 20:50:53,892 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl (main): NameNode metrics system started
+2013-03-01 20:50:57,588 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter (main): MBean for source ugi registered.
+2013-03-01 20:50:57,591 WARN org.apache.hadoop.metrics2.impl.MetricsSystemImpl (main): Source name ugi already exists!
+2013-03-01 20:50:57,663 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter (main): MBean for source jvm registered.
+2013-03-01 20:50:57,668 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter (main): MBean for source NameNode registered.
+2013-03-01 20:50:58,086 INFO org.apache.hadoop.hdfs.util.GSet (main): VM type       = 32-bit
+2013-03-01 20:50:58,099 INFO org.apache.hadoop.hdfs.util.GSet (main): 2% max memory = 3.7125 MB
+2013-03-01 20:50:58,099 INFO org.apache.hadoop.hdfs.util.GSet (main): capacity      = 2^20 = 1048576 entries
+2013-03-01 20:50:58,099 INFO org.apache.hadoop.hdfs.util.GSet (main): recommended=1048576, actual=1048576
+2013-03-01 20:50:58,615 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem (main): fsOwner=hadoop
+2013-03-01 20:50:58,619 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem (main): supergroup=supergroup
+2013-03-01 20:50:58,619 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem (main): isPermissionEnabled=true
+2013-03-01 20:50:58,847 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem (main): dfs.block.invalidate.limit=100
+2013-03-01 20:50:58,848 WARN org.apache.hadoop.hdfs.server.namenode.FSNamesystem (main): The dfs.support.append option is in your configuration, however append is not supported. This configuration option is no longer required to enable sync.
+2013-03-01 20:50:58,848 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem (main): isAccessTokenEnabled=false accessKeyUpdateInterval=0 min(s), accessTokenLifetime=0 min(s)
+2013-03-01 20:51:02,955 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem (main): Registered FSNamesystemStateMBean and NameNodeMXBean
+2013-03-01 20:51:04,088 INFO org.apache.hadoop.hdfs.server.namenode.NameNode (main): Caching file names occuring more than 10 times 
+2013-03-01 20:51:04,324 INFO org.apache.hadoop.hdfs.server.common.Storage (main): Number of files = 1
+2013-03-01 20:51:04,336 INFO org.apache.hadoop.hdfs.server.common.Storage (main): Number of files under construction = 0
+2013-03-01 20:51:04,336 INFO org.apache.hadoop.hdfs.server.common.Storage (main): Image file of size 112 loaded in 0 seconds.
+2013-03-01 20:51:04,336 INFO org.apache.hadoop.hdfs.server.common.Storage (main): Edits file /mnt/var/lib/hadoop/dfs-name/current/edits of size 4 edits # 0 loaded in 0 seconds.
+2013-03-01 20:51:04,541 INFO org.apache.hadoop.hdfs.server.common.Storage (main): Image file of size 112 saved in 0 seconds.
+2013-03-01 20:51:04,744 INFO org.apache.hadoop.hdfs.server.namenode.NameCache (main): initialized with 0 entries 0 lookups
+2013-03-01 20:51:04,744 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem (main): Finished loading FSImage in 6295 msecs
+2013-03-01 20:51:05,162 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem (main): Total number of blocks = 0
+2013-03-01 20:51:05,163 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem (main): Number of invalid blocks = 0
+2013-03-01 20:51:05,163 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem (main): Number of under-replicated blocks = 0
+2013-03-01 20:51:05,163 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem (main): Number of  over-replicated blocks = 0
+2013-03-01 20:51:05,163 INFO org.apache.hadoop.hdfs.StateChange (main): STATE* Safe mode termination scan for invalid, over- and under-replicated blocks completed in 417 msec
+2013-03-01 20:51:05,163 INFO org.apache.hadoop.hdfs.StateChange (main): STATE* Leaving safe mode after 6 secs.
+2013-03-01 20:51:05,163 INFO org.apache.hadoop.hdfs.StateChange (main): STATE* Network topology has 0 racks and 0 datanodes
+2013-03-01 20:51:05,163 INFO org.apache.hadoop.hdfs.StateChange (main): STATE* UnderReplicatedBlocks has 0 blocks
+2013-03-01 20:51:05,343 INFO org.apache.hadoop.util.HostsFileReader (main): Refreshing hosts (include/exclude) list
+2013-03-01 20:51:05,357 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem (org.apache.hadoop.hdfs.server.namenode.FSNamesystem$ReplicationMonitor@15db13f): ReplicateQueue QueueProcessingStatistics: First cycle completed 0 blocks in 1 msec
+2013-03-01 20:51:05,357 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem (org.apache.hadoop.hdfs.server.namenode.FSNamesystem$ReplicationMonitor@15db13f): ReplicateQueue QueueProcessingStatistics: Queue flush completed 0 blocks in 1 msec processing time, 1 msec clock time, 1 cycles
+2013-03-01 20:51:05,357 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem (org.apache.hadoop.hdfs.server.namenode.FSNamesystem$ReplicationMonitor@15db13f): InvalidateQueue QueueProcessingStatistics: First cycle completed 0 blocks in 0 msec
+2013-03-01 20:51:05,357 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem (org.apache.hadoop.hdfs.server.namenode.FSNamesystem$ReplicationMonitor@15db13f): InvalidateQueue QueueProcessingStatistics: Queue flush completed 0 blocks in 0 msec processing time, 0 msec clock time, 1 cycles
+2013-03-01 20:51:05,357 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter (main): MBean for source FSNamesystemMetrics registered.
+2013-03-01 20:51:05,654 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter (main): MBean for source RpcDetailedActivityForPort9000 registered.
+2013-03-01 20:51:05,655 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter (main): MBean for source RpcActivityForPort9000 registered.
+2013-03-01 20:51:05,655 INFO org.apache.hadoop.ipc.Server (pool-1-thread-1): Starting SocketReader
+2013-03-01 20:51:05,686 INFO org.apache.hadoop.hdfs.server.namenode.NameNode (main): Namenode up at: /10.241.23.229:9000
+2013-03-01 20:51:11,570 INFO org.mortbay.log (main): Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2013-03-01 20:51:12,136 INFO org.apache.hadoop.http.HttpServer (main): Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2013-03-01 20:51:12,294 INFO org.apache.hadoop.http.HttpServer (main): dfs.webhdfs.enabled = false
+2013-03-01 20:51:12,408 INFO org.apache.hadoop.http.HttpServer (main): Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 9101
+2013-03-01 20:51:12,410 INFO org.apache.hadoop.http.HttpServer (main): listener.getLocalPort() returned 9101 webServer.getConnectors()[0].getLocalPort() returned 9101
+2013-03-01 20:51:12,410 INFO org.apache.hadoop.http.HttpServer (main): Jetty bound to port 9101
+2013-03-01 20:51:12,410 INFO org.mortbay.log (main): jetty-6.1.26
+2013-03-01 20:51:17,241 INFO org.mortbay.log (main): Started SelectChannelConnector@0.0.0.0:9101
+2013-03-01 20:51:17,242 INFO org.apache.hadoop.hdfs.server.namenode.NameNode (main): Web-server up at: 0.0.0.0:9101
+2013-03-01 20:51:17,538 INFO org.apache.hadoop.ipc.Server (IPC Server handler 63 on 9000): IPC Server handler 63 on 9000: starting
+2013-03-01 20:51:17,242 INFO org.apache.hadoop.ipc.Server (IPC Server Responder): IPC Server Responder: starting
+2013-03-01 20:51:17,243 INFO org.apache.hadoop.ipc.Server (IPC Server listener on 9000): IPC Server listener on 9000: starting
+2013-03-01 20:51:17,243 INFO org.apache.hadoop.ipc.Server (IPC Server handler 0 on 9000): IPC Server handler 0 on 9000: starting
+2013-03-01 20:51:17,247 INFO org.apache.hadoop.ipc.Server (IPC Server handler 1 on 9000): IPC Server handler 1 on 9000: starting
+2013-03-01 20:51:17,248 INFO org.apache.hadoop.ipc.Server (IPC Server handler 2 on 9000): IPC Server handler 2 on 9000: starting
+2013-03-01 20:51:17,248 INFO org.apache.hadoop.ipc.Server (IPC Server handler 3 on 9000): IPC Server handler 3 on 9000: starting
+2013-03-01 20:51:17,269 INFO org.apache.hadoop.ipc.Server (IPC Server handler 4 on 9000): IPC Server handler 4 on 9000: starting
+2013-03-01 20:51:17,270 INFO org.apache.hadoop.ipc.Server (IPC Server handler 5 on 9000): IPC Server handler 5 on 9000: starting
+2013-03-01 20:51:17,271 INFO org.apache.hadoop.ipc.Server (IPC Server handler 6 on 9000): IPC Server handler 6 on 9000: starting
+2013-03-01 20:51:17,309 INFO org.apache.hadoop.ipc.Server (IPC Server handler 7 on 9000): IPC Server handler 7 on 9000: starting
+2013-03-01 20:51:17,309 INFO org.apache.hadoop.ipc.Server (IPC Server handler 8 on 9000): IPC Server handler 8 on 9000: starting
+2013-03-01 20:51:17,309 INFO org.apache.hadoop.ipc.Server (IPC Server handler 9 on 9000): IPC Server handler 9 on 9000: starting
+2013-03-01 20:51:17,309 INFO org.apache.hadoop.ipc.Server (IPC Server handler 10 on 9000): IPC Server handler 10 on 9000: starting
+2013-03-01 20:51:17,314 INFO org.apache.hadoop.ipc.Server (IPC Server handler 11 on 9000): IPC Server handler 11 on 9000: starting
+2013-03-01 20:51:17,314 INFO org.apache.hadoop.ipc.Server (IPC Server handler 12 on 9000): IPC Server handler 12 on 9000: starting
+2013-03-01 20:51:17,315 INFO org.apache.hadoop.ipc.Server (IPC Server handler 13 on 9000): IPC Server handler 13 on 9000: starting
+2013-03-01 20:51:17,315 INFO org.apache.hadoop.ipc.Server (IPC Server handler 14 on 9000): IPC Server handler 14 on 9000: starting
+2013-03-01 20:51:17,319 INFO org.apache.hadoop.ipc.Server (IPC Server handler 15 on 9000): IPC Server handler 15 on 9000: starting
+2013-03-01 20:51:17,320 INFO org.apache.hadoop.ipc.Server (IPC Server handler 16 on 9000): IPC Server handler 16 on 9000: starting
+2013-03-01 20:51:17,320 INFO org.apache.hadoop.ipc.Server (IPC Server handler 17 on 9000): IPC Server handler 17 on 9000: starting
+2013-03-01 20:51:17,320 INFO org.apache.hadoop.ipc.Server (IPC Server handler 18 on 9000): IPC Server handler 18 on 9000: starting
+2013-03-01 20:51:17,320 INFO org.apache.hadoop.ipc.Server (IPC Server handler 19 on 9000): IPC Server handler 19 on 9000: starting
+2013-03-01 20:51:17,323 INFO org.apache.hadoop.ipc.Server (IPC Server handler 20 on 9000): IPC Server handler 20 on 9000: starting
+2013-03-01 20:51:17,324 INFO org.apache.hadoop.ipc.Server (IPC Server handler 21 on 9000): IPC Server handler 21 on 9000: starting
+2013-03-01 20:51:17,324 INFO org.apache.hadoop.ipc.Server (IPC Server handler 22 on 9000): IPC Server handler 22 on 9000: starting
+2013-03-01 20:51:17,563 INFO org.apache.hadoop.ipc.Server (IPC Server handler 24 on 9000): IPC Server handler 24 on 9000: starting
+2013-03-01 20:51:17,328 INFO org.apache.hadoop.ipc.Server (IPC Server handler 23 on 9000): IPC Server handler 23 on 9000: starting
+2013-03-01 20:51:17,720 INFO org.apache.hadoop.ipc.Server (IPC Server handler 62 on 9000): IPC Server handler 62 on 9000: starting
+2013-03-01 20:51:17,720 INFO org.apache.hadoop.ipc.Server (IPC Server handler 61 on 9000): IPC Server handler 61 on 9000: starting
+2013-03-01 20:51:17,721 INFO org.apache.hadoop.ipc.Server (IPC Server handler 60 on 9000): IPC Server handler 60 on 9000: starting
+2013-03-01 20:51:17,721 INFO org.apache.hadoop.ipc.Server (IPC Server handler 59 on 9000): IPC Server handler 59 on 9000: starting
+2013-03-01 20:51:17,721 INFO org.apache.hadoop.ipc.Server (IPC Server handler 58 on 9000): IPC Server handler 58 on 9000: starting
+2013-03-01 20:51:17,721 INFO org.apache.hadoop.ipc.Server (IPC Server handler 57 on 9000): IPC Server handler 57 on 9000: starting
+2013-03-01 20:51:17,721 INFO org.apache.hadoop.ipc.Server (IPC Server handler 56 on 9000): IPC Server handler 56 on 9000: starting
+2013-03-01 20:51:17,721 INFO org.apache.hadoop.ipc.Server (IPC Server handler 55 on 9000): IPC Server handler 55 on 9000: starting
+2013-03-01 20:51:17,721 INFO org.apache.hadoop.ipc.Server (IPC Server handler 54 on 9000): IPC Server handler 54 on 9000: starting
+2013-03-01 20:51:17,721 INFO org.apache.hadoop.ipc.Server (IPC Server handler 53 on 9000): IPC Server handler 53 on 9000: starting
+2013-03-01 20:51:17,721 INFO org.apache.hadoop.ipc.Server (IPC Server handler 52 on 9000): IPC Server handler 52 on 9000: starting
+2013-03-01 20:51:17,721 INFO org.apache.hadoop.ipc.Server (IPC Server handler 51 on 9000): IPC Server handler 51 on 9000: starting
+2013-03-01 20:51:17,721 INFO org.apache.hadoop.ipc.Server (IPC Server handler 50 on 9000): IPC Server handler 50 on 9000: starting
+2013-03-01 20:51:17,721 INFO org.apache.hadoop.ipc.Server (IPC Server handler 49 on 9000): IPC Server handler 49 on 9000: starting
+2013-03-01 20:51:17,722 INFO org.apache.hadoop.ipc.Server (IPC Server handler 48 on 9000): IPC Server handler 48 on 9000: starting
+2013-03-01 20:51:17,722 INFO org.apache.hadoop.ipc.Server (IPC Server handler 47 on 9000): IPC Server handler 47 on 9000: starting
+2013-03-01 20:51:17,722 INFO org.apache.hadoop.ipc.Server (IPC Server handler 46 on 9000): IPC Server handler 46 on 9000: starting
+2013-03-01 20:51:17,722 INFO org.apache.hadoop.ipc.Server (IPC Server handler 45 on 9000): IPC Server handler 45 on 9000: starting
+2013-03-01 20:51:17,722 INFO org.apache.hadoop.ipc.Server (IPC Server handler 44 on 9000): IPC Server handler 44 on 9000: starting
+2013-03-01 20:51:17,722 INFO org.apache.hadoop.ipc.Server (IPC Server handler 43 on 9000): IPC Server handler 43 on 9000: starting
+2013-03-01 20:51:17,722 INFO org.apache.hadoop.ipc.Server (IPC Server handler 42 on 9000): IPC Server handler 42 on 9000: starting
+2013-03-01 20:51:17,722 INFO org.apache.hadoop.ipc.Server (IPC Server handler 41 on 9000): IPC Server handler 41 on 9000: starting
+2013-03-01 20:51:17,723 INFO org.apache.hadoop.ipc.Server (IPC Server handler 40 on 9000): IPC Server handler 40 on 9000: starting
+2013-03-01 20:51:17,723 INFO org.apache.hadoop.ipc.Server (IPC Server handler 39 on 9000): IPC Server handler 39 on 9000: starting
+2013-03-01 20:51:17,723 INFO org.apache.hadoop.ipc.Server (IPC Server handler 38 on 9000): IPC Server handler 38 on 9000: starting
+2013-03-01 20:51:17,723 INFO org.apache.hadoop.ipc.Server (IPC Server handler 37 on 9000): IPC Server handler 37 on 9000: starting
+2013-03-01 20:51:17,723 INFO org.apache.hadoop.ipc.Server (IPC Server handler 36 on 9000): IPC Server handler 36 on 9000: starting
+2013-03-01 20:51:17,723 INFO org.apache.hadoop.ipc.Server (IPC Server handler 35 on 9000): IPC Server handler 35 on 9000: starting
+2013-03-01 20:51:17,723 INFO org.apache.hadoop.ipc.Server (IPC Server handler 34 on 9000): IPC Server handler 34 on 9000: starting
+2013-03-01 20:51:17,723 INFO org.apache.hadoop.ipc.Server (IPC Server handler 33 on 9000): IPC Server handler 33 on 9000: starting
+2013-03-01 20:51:17,723 INFO org.apache.hadoop.ipc.Server (IPC Server handler 32 on 9000): IPC Server handler 32 on 9000: starting
+2013-03-01 20:51:17,723 INFO org.apache.hadoop.ipc.Server (IPC Server handler 31 on 9000): IPC Server handler 31 on 9000: starting
+2013-03-01 20:51:17,723 INFO org.apache.hadoop.ipc.Server (IPC Server handler 30 on 9000): IPC Server handler 30 on 9000: starting
+2013-03-01 20:51:17,723 INFO org.apache.hadoop.ipc.Server (IPC Server handler 29 on 9000): IPC Server handler 29 on 9000: starting
+2013-03-01 20:51:17,723 INFO org.apache.hadoop.ipc.Server (IPC Server handler 28 on 9000): IPC Server handler 28 on 9000: starting
+2013-03-01 20:51:17,724 INFO org.apache.hadoop.ipc.Server (IPC Server handler 27 on 9000): IPC Server handler 27 on 9000: starting
+2013-03-01 20:51:17,724 INFO org.apache.hadoop.ipc.Server (IPC Server handler 26 on 9000): IPC Server handler 26 on 9000: starting
+2013-03-01 20:51:17,724 INFO org.apache.hadoop.ipc.Server (IPC Server handler 25 on 9000): IPC Server handler 25 on 9000: starting
+2013-03-01 20:51:19,129 INFO org.apache.hadoop.security.ShellBasedUnixGroupsMapping (IPC Server handler 1 on 9000): add hadoop to shell userGroupsCache
+2013-03-01 20:51:19,808 ERROR org.apache.hadoop.security.UserGroupInformation (IPC Server handler 10 on 9000): PriviledgedActionException as:hadoop cause:java.io.IOException: File /mnt/var/lib/hadoop/tmp/mapred/system/jobtracker.info could only be replicated to 0 nodes, instead of 1
+2013-03-01 20:51:19,808 INFO org.apache.hadoop.ipc.Server (IPC Server handler 10 on 9000): IPC Server handler 10 on 9000, call addBlock(/mnt/var/lib/hadoop/tmp/mapred/system/jobtracker.info, DFSClient_-134077326, null) from 10.241.23.229:58328: error: java.io.IOException: File /mnt/var/lib/hadoop/tmp/mapred/system/jobtracker.info could only be replicated to 0 nodes, instead of 1
+java.io.IOException: File /mnt/var/lib/hadoop/tmp/mapred/system/jobtracker.info could only be replicated to 0 nodes, instead of 1
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getAdditionalBlock(FSNamesystem.java:1569)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.addBlock(NameNode.java:698)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:573)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1393)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1389)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1132)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:1387)
+2013-03-01 20:51:29,856 ERROR org.apache.hadoop.security.UserGroupInformation (IPC Server handler 19 on 9000): PriviledgedActionException as:hadoop cause:java.io.IOException: File /mnt/var/lib/hadoop/tmp/mapred/system/jobtracker.info could only be replicated to 0 nodes, instead of 1
+2013-03-01 20:51:29,857 INFO org.apache.hadoop.ipc.Server (IPC Server handler 19 on 9000): IPC Server handler 19 on 9000, call addBlock(/mnt/var/lib/hadoop/tmp/mapred/system/jobtracker.info, DFSClient_-134077326, null) from 10.241.23.229:58329: error: java.io.IOException: File /mnt/var/lib/hadoop/tmp/mapred/system/jobtracker.info could only be replicated to 0 nodes, instead of 1
+java.io.IOException: File /mnt/var/lib/hadoop/tmp/mapred/system/jobtracker.info could only be replicated to 0 nodes, instead of 1
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getAdditionalBlock(FSNamesystem.java:1569)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.addBlock(NameNode.java:698)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:573)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1393)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1389)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1132)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:1387)
+2013-03-01 20:51:39,914 ERROR org.apache.hadoop.security.UserGroupInformation (IPC Server handler 62 on 9000): PriviledgedActionException as:hadoop cause:java.io.IOException: File /mnt/var/lib/hadoop/tmp/mapred/system/jobtracker.info could only be replicated to 0 nodes, instead of 1
+2013-03-01 20:51:39,914 INFO org.apache.hadoop.ipc.Server (IPC Server handler 62 on 9000): IPC Server handler 62 on 9000, call addBlock(/mnt/var/lib/hadoop/tmp/mapred/system/jobtracker.info, DFSClient_-134077326, null) from 10.241.23.229:58330: error: java.io.IOException: File /mnt/var/lib/hadoop/tmp/mapred/system/jobtracker.info could only be replicated to 0 nodes, instead of 1
+java.io.IOException: File /mnt/var/lib/hadoop/tmp/mapred/system/jobtracker.info could only be replicated to 0 nodes, instead of 1
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getAdditionalBlock(FSNamesystem.java:1569)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.addBlock(NameNode.java:698)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:573)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1393)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1389)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1132)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:1387)
+2013-03-01 20:51:49,935 ERROR org.apache.hadoop.security.UserGroupInformation (IPC Server handler 53 on 9000): PriviledgedActionException as:hadoop cause:java.io.IOException: File /mnt/var/lib/hadoop/tmp/mapred/system/jobtracker.info could only be replicated to 0 nodes, instead of 1
+2013-03-01 20:51:49,935 INFO org.apache.hadoop.ipc.Server (IPC Server handler 53 on 9000): IPC Server handler 53 on 9000, call addBlock(/mnt/var/lib/hadoop/tmp/mapred/system/jobtracker.info, DFSClient_-134077326, null) from 10.241.23.229:58330: error: java.io.IOException: File /mnt/var/lib/hadoop/tmp/mapred/system/jobtracker.info could only be replicated to 0 nodes, instead of 1
+java.io.IOException: File /mnt/var/lib/hadoop/tmp/mapred/system/jobtracker.info could only be replicated to 0 nodes, instead of 1
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getAdditionalBlock(FSNamesystem.java:1569)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.addBlock(NameNode.java:698)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:573)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1393)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1389)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1132)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:1387)
+2013-03-01 20:51:52,972 INFO org.apache.hadoop.hdfs.StateChange (IPC Server handler 51 on 9000): BLOCK* NameSystem.registerDatanode: node registration from 10.208.42.195:9200 storage DS-889078416-10.208.42.195-9200-1362171112918
+2013-03-01 20:51:52,975 INFO org.apache.hadoop.net.NetworkTopology (IPC Server handler 51 on 9000): Adding a new node: /default-rack/10.208.42.195:9200
+2013-03-01 20:51:52,995 INFO org.apache.hadoop.hdfs.StateChange (IPC Server handler 50 on 9000): *BLOCK* NameNode.blocksBeingWrittenReport: from 10.208.42.195:9200 0 blocks
+2013-03-01 20:51:53,026 INFO org.apache.hadoop.hdfs.StateChange (IPC Server handler 48 on 9000): *BLOCK* NameSystem.processReport: from 10.208.42.195:9200, blocks: 0, processing time: 0 msecs
+2013-03-01 20:52:00,035 INFO org.apache.hadoop.hdfs.StateChange (IPC Server handler 41 on 9000): BLOCK* NameSystem.allocateBlock: /mnt/var/lib/hadoop/tmp/mapred/system/jobtracker.info. blk_7102925347392507675_1005
+2013-03-01 20:52:01,440 INFO org.apache.hadoop.hdfs.StateChange (IPC Server handler 40 on 9000): BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.208.42.195:9200 is added to blk_7102925347392507675_1005 size 4
+2013-03-01 20:52:01,451 INFO org.apache.hadoop.hdfs.StateChange (IPC Server handler 39 on 9000): Removing lease on  file /mnt/var/lib/hadoop/tmp/mapred/system/jobtracker.info from client DFSClient_-134077326
+2013-03-01 20:52:01,451 INFO org.apache.hadoop.hdfs.StateChange (IPC Server handler 39 on 9000): DIR* NameSystem.completeFile: file /mnt/var/lib/hadoop/tmp/mapred/system/jobtracker.info is closed by DFSClient_-134077326
+2013-03-01 20:52:04,858 INFO org.apache.hadoop.hdfs.StateChange (IPC Server handler 37 on 9000): BLOCK* NameSystem.registerDatanode: node registration from 10.208.54.148:9200 storage DS-2050382156-10.208.54.148-9200-1362171124761
+2013-03-01 20:52:04,859 INFO org.apache.hadoop.net.NetworkTopology (IPC Server handler 37 on 9000): Adding a new node: /default-rack/10.208.54.148:9200
+2013-03-01 20:52:04,914 INFO org.apache.hadoop.hdfs.StateChange (IPC Server handler 36 on 9000): *BLOCK* NameNode.blocksBeingWrittenReport: from 10.208.54.148:9200 0 blocks
+2013-03-01 20:52:05,048 INFO org.apache.hadoop.hdfs.StateChange (IPC Server handler 33 on 9000): *BLOCK* NameSystem.processReport: from 10.208.54.148:9200, blocks: 0, processing time: 0 msecs
+2013-03-01 20:52:45,735 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem (IPC Server handler 51 on 9000): Number of transactions: 31 Total time for transactions(ms): 1Number of transactions batched in Syncs: 0 Number of syncs: 17 SyncTimes(ms): 185 
+2013-03-01 20:52:47,552 INFO org.apache.hadoop.hdfs.StateChange (IPC Server handler 41 on 9000): BLOCK* NameSystem.allocateBlock: /mnt/var/lib/hadoop/tmp/mapred/staging/hadoop/.staging/job_201303012050_0001/job.jar. blk_4569342731470177910_1006
+2013-03-01 20:52:47,899 INFO org.apache.hadoop.hdfs.StateChange (IPC Server handler 39 on 9000): BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.208.54.148:9200 is added to blk_4569342731470177910_1006 size 111680
+2013-03-01 20:52:47,901 INFO org.apache.hadoop.hdfs.StateChange (IPC Server handler 38 on 9000): Removing lease on  file /mnt/var/lib/hadoop/tmp/mapred/staging/hadoop/.staging/job_201303012050_0001/job.jar from client DFSClient_744760284
+2013-03-01 20:52:47,901 INFO org.apache.hadoop.hdfs.StateChange (IPC Server handler 38 on 9000): DIR* NameSystem.completeFile: file /mnt/var/lib/hadoop/tmp/mapred/staging/hadoop/.staging/job_201303012050_0001/job.jar is closed by DFSClient_744760284
+2013-03-01 20:52:47,903 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem (IPC Server handler 37 on 9000): Increasing replication for file /mnt/var/lib/hadoop/tmp/mapred/staging/hadoop/.staging/job_201303012050_0001/job.jar. New replication is 10
+2013-03-01 20:52:48,485 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem (IPC Server handler 33 on 9000): Increasing replication for file /mnt/var/lib/hadoop/tmp/mapred/staging/hadoop/.staging/job_201303012050_0001/job.split. New replication is 10
+2013-03-01 20:52:48,488 INFO org.apache.hadoop.hdfs.StateChange (IPC Server handler 32 on 9000): BLOCK* NameSystem.allocateBlock: /mnt/var/lib/hadoop/tmp/mapred/staging/hadoop/.staging/job_201303012050_0001/job.split. blk_6297202824883942394_1007
+2013-03-01 20:52:49,048 INFO org.apache.hadoop.hdfs.StateChange (IPC Server handler 31 on 9000): BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.208.42.195:9200 is added to blk_6297202824883942394_1007 size 783
+2013-03-01 20:52:49,049 INFO org.apache.hadoop.hdfs.StateChange (IPC Server handler 30 on 9000): BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.208.54.148:9200 is added to blk_6297202824883942394_1007 size 783
+2013-03-01 20:52:49,050 INFO org.apache.hadoop.hdfs.StateChange (IPC Server handler 29 on 9000): Removing lease on  file /mnt/var/lib/hadoop/tmp/mapred/staging/hadoop/.staging/job_201303012050_0001/job.split from client DFSClient_744760284
+2013-03-01 20:52:49,050 INFO org.apache.hadoop.hdfs.StateChange (IPC Server handler 29 on 9000): DIR* NameSystem.completeFile: file /mnt/var/lib/hadoop/tmp/mapred/staging/hadoop/.staging/job_201303012050_0001/job.split is closed by DFSClient_744760284
+2013-03-01 20:52:49,089 INFO org.apache.hadoop.hdfs.StateChange (IPC Server handler 26 on 9000): BLOCK* NameSystem.allocateBlock: /mnt/var/lib/hadoop/tmp/mapred/staging/hadoop/.staging/job_201303012050_0001/job.splitmetainfo. blk_-5714232152651269467_1008
+2013-03-01 20:52:49,114 INFO org.apache.hadoop.hdfs.StateChange (IPC Server handler 25 on 9000): BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.208.42.195:9200 is added to blk_-5714232152651269467_1008 size 149
+2013-03-01 20:52:49,115 INFO org.apache.hadoop.hdfs.StateChange (IPC Server handler 63 on 9000): Removing lease on  file /mnt/var/lib/hadoop/tmp/mapred/staging/hadoop/.staging/job_201303012050_0001/job.splitmetainfo from client DFSClient_744760284
+2013-03-01 20:52:49,116 INFO org.apache.hadoop.hdfs.StateChange (IPC Server handler 63 on 9000): DIR* NameSystem.completeFile: file /mnt/var/lib/hadoop/tmp/mapred/staging/hadoop/.staging/job_201303012050_0001/job.splitmetainfo is closed by DFSClient_744760284
+2013-03-01 20:52:49,278 INFO org.apache.hadoop.hdfs.StateChange (IPC Server handler 2 on 9000): BLOCK* NameSystem.allocateBlock: /mnt/var/lib/hadoop/tmp/mapred/staging/hadoop/.staging/job_201303012050_0001/job.xml. blk_4074609577782141210_1009
+2013-03-01 20:52:49,298 INFO org.apache.hadoop.hdfs.StateChange (IPC Server handler 3 on 9000): BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.208.42.195:9200 is added to blk_4074609577782141210_1009 size 25297
+2013-03-01 20:52:49,321 INFO org.apache.hadoop.hdfs.StateChange (IPC Server handler 4 on 9000): Removing lease on  file /mnt/var/lib/hadoop/tmp/mapred/staging/hadoop/.staging/job_201303012050_0001/job.xml from client DFSClient_744760284
+2013-03-01 20:52:49,322 INFO org.apache.hadoop.hdfs.StateChange (IPC Server handler 4 on 9000): DIR* NameSystem.completeFile: file /mnt/var/lib/hadoop/tmp/mapred/staging/hadoop/.staging/job_201303012050_0001/job.xml is closed by DFSClient_744760284
+2013-03-01 20:52:49,954 INFO org.apache.hadoop.hdfs.StateChange (IPC Server handler 12 on 9000): BLOCK* NameSystem.allocateBlock: /mnt/var/lib/hadoop/tmp/mapred/system/job_201303012050_0001/jobToken. blk_-3936360396320827284_1010
+2013-03-01 20:52:49,959 INFO org.apache.hadoop.hdfs.StateChange (IPC Server handler 13 on 9000): BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.208.54.148:9200 is added to blk_-3936360396320827284_1010 size 106
+2013-03-01 20:52:49,968 INFO org.apache.hadoop.hdfs.StateChange (IPC Server handler 14 on 9000): Removing lease on  file /mnt/var/lib/hadoop/tmp/mapred/system/job_201303012050_0001/jobToken from client DFSClient_-134077326
+2013-03-01 20:52:49,968 INFO org.apache.hadoop.hdfs.StateChange (IPC Server handler 14 on 9000): DIR* NameSystem.completeFile: file /mnt/var/lib/hadoop/tmp/mapred/system/job_201303012050_0001/jobToken is closed by DFSClient_-134077326
+2013-03-01 20:52:50,792 INFO org.apache.hadoop.hdfs.StateChange (org.apache.hadoop.hdfs.server.namenode.FSNamesystem$ReplicationMonitor@15db13f): BLOCK* ask 10.208.54.148:9200 to replicate blk_4569342731470177910_1006 to datanode(s) 10.208.42.195:9200
+2013-03-01 20:52:52,981 INFO org.apache.hadoop.hdfs.StateChange (IPC Server handler 59 on 9000): BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.208.42.195:9200 is added to blk_4569342731470177910_1006 size 111680
+2013-03-01 20:53:55,939 INFO org.apache.hadoop.hdfs.StateChange (IPC Server handler 35 on 9000): BLOCK* NameSystem.addToInvalidates: blk_4569342731470177910 is added to invalidSet of 10.208.54.148:9200
+2013-03-01 20:53:55,939 INFO org.apache.hadoop.hdfs.StateChange (IPC Server handler 35 on 9000): BLOCK* NameSystem.addToInvalidates: blk_4569342731470177910 is added to invalidSet of 10.208.42.195:9200
+2013-03-01 20:53:55,939 INFO org.apache.hadoop.hdfs.StateChange (IPC Server handler 35 on 9000): BLOCK* NameSystem.addToInvalidates: blk_6297202824883942394 is added to invalidSet of 10.208.42.195:9200
+2013-03-01 20:53:55,939 INFO org.apache.hadoop.hdfs.StateChange (IPC Server handler 35 on 9000): BLOCK* NameSystem.addToInvalidates: blk_6297202824883942394 is added to invalidSet of 10.208.54.148:9200
+2013-03-01 20:53:55,939 INFO org.apache.hadoop.hdfs.StateChange (IPC Server handler 35 on 9000): BLOCK* NameSystem.addToInvalidates: blk_-5714232152651269467 is added to invalidSet of 10.208.42.195:9200
+2013-03-01 20:53:55,939 INFO org.apache.hadoop.hdfs.StateChange (IPC Server handler 35 on 9000): BLOCK* NameSystem.addToInvalidates: blk_4074609577782141210 is added to invalidSet of 10.208.42.195:9200
+2013-03-01 20:53:55,939 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem (IPC Server handler 35 on 9000): Number of transactions: 56 Total time for transactions(ms): 3Number of transactions batched in Syncs: 0 Number of syncs: 36 SyncTimes(ms): 305 
+2013-03-01 20:53:56,798 INFO org.apache.hadoop.hdfs.StateChange (org.apache.hadoop.hdfs.server.namenode.FSNamesystem$ReplicationMonitor@15db13f): BLOCK* ask 10.208.42.195:9200 to delete  blk_4074609577782141210_1009 blk_-5714232152651269467_1008 blk_6297202824883942394_1007 blk_4569342731470177910_1006
+2013-03-01 20:53:57,791 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping (IPC Server handler 31 on 9000): got exception trying to get groups for user job_201303012050_0001
+org.apache.hadoop.util.Shell$ExitCodeException: id: job_201303012050_0001: No such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:255)
+	at org.apache.hadoop.util.Shell.run(Shell.java:182)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:375)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:461)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:444)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:78)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:53)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:79)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1037)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:50)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.checkPermission(FSNamesystem.java:5218)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.checkTraverse(FSNamesystem.java:5201)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getFileInfo(FSNamesystem.java:2030)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.getFileInfo(NameNode.java:850)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:573)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1393)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1389)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1132)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:1387)
+2013-03-01 20:53:57,792 INFO org.apache.hadoop.security.ShellBasedUnixGroupsMapping (IPC Server handler 31 on 9000): add job_201303012050_0001 to shell userGroupsCache
+2013-03-01 20:53:57,794 WARN org.apache.hadoop.security.UserGroupInformation (IPC Server handler 31 on 9000): No groups available for user job_201303012050_0001
+2013-03-01 20:53:59,798 INFO org.apache.hadoop.hdfs.StateChange (org.apache.hadoop.hdfs.server.namenode.FSNamesystem$ReplicationMonitor@15db13f): BLOCK* ask 10.208.54.148:9200 to delete  blk_6297202824883942394_1007 blk_4569342731470177910_1006
+2013-03-01 20:54:01,416 INFO org.apache.hadoop.hdfs.StateChange (IPC Server handler 28 on 9000): BLOCK* NameSystem.addToInvalidates: blk_-3936360396320827284 is added to invalidSet of 10.208.54.148:9200
+2013-03-01 20:54:02,799 INFO org.apache.hadoop.hdfs.StateChange (org.apache.hadoop.hdfs.server.namenode.FSNamesystem$ReplicationMonitor@15db13f): BLOCK* ask 10.208.54.148:9200 to delete  blk_-3936360396320827284_1010
+2013-03-01 20:54:06,297 WARN org.apache.hadoop.security.UserGroupInformation (IPC Server handler 4 on 9000): No groups available for user job_201303012050_0001
+2013-03-01 20:54:06,744 WARN org.apache.hadoop.security.UserGroupInformation (IPC Server handler 6 on 9000): No groups available for user job_201303012050_0001
+2013-03-01 20:54:06,823 WARN org.apache.hadoop.security.UserGroupInformation (IPC Server handler 8 on 9000): No groups available for user job_201303012050_0001
+2013-03-01 20:54:07,152 WARN org.apache.hadoop.security.UserGroupInformation (IPC Server handler 11 on 9000): No groups available for user job_201303012050_0001
+2013-03-01 20:54:09,083 WARN org.apache.hadoop.security.UserGroupInformation (IPC Server handler 13 on 9000): No groups available for user job_201303012050_0001
+2013-03-01 20:54:09,363 WARN org.apache.hadoop.security.UserGroupInformation (IPC Server handler 18 on 9000): No groups available for user job_201303012050_0001

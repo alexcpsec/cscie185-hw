@@ -1,0 +1,462 @@
+2013-03-01 20:50:54,505 INFO org.apache.hadoop.mapred.JobTracker (main): STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting JobTracker
+STARTUP_MSG:   host = domU-12-31-39-05-14-17.compute-1.internal/10.241.23.229
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 1.0.3
+STARTUP_MSG:   build = http://aws.amazon.com/elasticmapreduce/ -r 81753a9828927efacf083f483d3b09b72bdbc9bf; compiled by 'Elastic MapReduce' on Thu Feb 21 03:13:22 UTC 2013
+************************************************************/
+2013-03-01 20:50:56,296 INFO org.apache.hadoop.metrics2.impl.MetricsConfig (main): loaded properties from hadoop-metrics2.properties
+2013-03-01 20:50:56,306 INFO org.apache.hadoop.metrics2.sink.cloudwatch.CloudWatchSink (main): Initializing the CloudWatchSink for metrics.
+2013-03-01 20:50:57,970 INFO org.apache.hadoop.metrics2.impl.MetricsSinkAdapter (main): Sink file started
+2013-03-01 20:50:58,897 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter (main): MBean for source MetricsSystem,sub=Stats registered.
+2013-03-01 20:50:58,903 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl (main): Scheduled snapshot period at 300 second(s).
+2013-03-01 20:50:58,903 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl (main): JobTracker metrics system started
+2013-03-01 20:51:01,732 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter (main): MBean for source QueueMetrics,q=default registered.
+2013-03-01 20:51:05,656 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter (main): MBean for source ugi registered.
+2013-03-01 20:51:05,714 WARN org.apache.hadoop.metrics2.impl.MetricsSystemImpl (main): Source name ugi already exists!
+2013-03-01 20:51:05,717 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager (main): Updating the current master key for generating delegation tokens
+2013-03-01 20:51:05,746 INFO org.apache.hadoop.mapred.JobTracker (main): Scheduler configured with (memSizeForMapSlotOnJT, memSizeForReduceSlotOnJT, limitMaxMemForMapTasks, limitMaxMemForReduceTasks) (-1, -1, -1, -1)
+2013-03-01 20:51:05,747 INFO org.apache.hadoop.util.HostsFileReader (main): Refreshing hosts (include/exclude) list
+2013-03-01 20:51:05,747 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager (Thread[Thread-5,5,main]): Starting expired delegation token remover thread, tokenRemoverScanInterval=60 min(s)
+2013-03-01 20:51:05,752 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager (Thread[Thread-5,5,main]): Updating the current master key for generating delegation tokens
+2013-03-01 20:51:05,811 INFO org.apache.hadoop.mapred.JobTracker (main): Starting jobtracker with owner as hadoop
+2013-03-01 20:51:05,926 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter (main): MBean for source RpcDetailedActivityForPort9001 registered.
+2013-03-01 20:51:05,926 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter (main): MBean for source RpcActivityForPort9001 registered.
+2013-03-01 20:51:05,927 INFO org.apache.hadoop.ipc.Server (pool-2-thread-1): Starting SocketReader
+2013-03-01 20:51:12,016 INFO org.mortbay.log (main): Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2013-03-01 20:51:12,462 INFO org.apache.hadoop.http.HttpServer (main): Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2013-03-01 20:51:12,693 INFO org.apache.hadoop.util.NativeCodeLoader (main): Loaded the native-hadoop library
+2013-03-01 20:51:12,707 INFO org.apache.hadoop.http.HttpServer (main): Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 9100
+2013-03-01 20:51:12,723 INFO org.apache.hadoop.http.HttpServer (main): listener.getLocalPort() returned 9100 webServer.getConnectors()[0].getLocalPort() returned 9100
+2013-03-01 20:51:12,723 INFO org.apache.hadoop.http.HttpServer (main): Jetty bound to port 9100
+2013-03-01 20:51:12,723 INFO org.mortbay.log (main): jetty-6.1.26
+2013-03-01 20:51:17,430 INFO org.mortbay.log (main): Started SelectChannelConnector@0.0.0.0:9100
+2013-03-01 20:51:17,435 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter (main): MBean for source jvm registered.
+2013-03-01 20:51:17,450 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter (main): MBean for source JobTrackerMetrics registered.
+2013-03-01 20:51:17,450 INFO org.apache.hadoop.mapred.JobTracker (main): JobTracker up at: 9001
+2013-03-01 20:51:17,450 INFO org.apache.hadoop.mapred.JobTracker (main): JobTracker webserver: 9100
+2013-03-01 20:51:19,195 INFO org.apache.hadoop.mapred.JobTracker (main): Creating the system directory
+2013-03-01 20:51:19,349 INFO org.apache.hadoop.mapred.JobHistory (main): Creating DONE folder at file:/mnt/var/log/hadoop/history/done
+2013-03-01 20:51:19,354 INFO org.apache.hadoop.mapred.JobTracker (main): History server being initialized in embedded mode
+2013-03-01 20:51:19,379 INFO org.apache.hadoop.mapred.JobHistoryServer (main): Started job history server at: localhost:9100
+2013-03-01 20:51:19,379 INFO org.apache.hadoop.mapred.JobTracker (main): Job History Server web address: localhost:9100
+2013-03-01 20:51:19,382 INFO org.apache.hadoop.mapred.CompletedJobStatusStore (main): Completed job store is inactive
+2013-03-01 20:51:19,813 WARN org.apache.hadoop.hdfs.DFSClient (Thread-18): DataStreamer Exception: org.apache.hadoop.ipc.RemoteException: java.io.IOException: File /mnt/var/lib/hadoop/tmp/mapred/system/jobtracker.info could only be replicated to 0 nodes, instead of 1
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getAdditionalBlock(FSNamesystem.java:1569)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.addBlock(NameNode.java:698)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:573)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1393)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1389)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1132)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:1387)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:1067)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:225)
+	at $Proxy5.addBlock(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:83)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:59)
+	at $Proxy5.addBlock(Unknown Source)
+	at org.apache.hadoop.hdfs.DFSClient$DFSOutputStream.locateFollowingBlock(DFSClient.java:3633)
+	at org.apache.hadoop.hdfs.DFSClient$DFSOutputStream.nextBlockOutputStream(DFSClient.java:3493)
+	at org.apache.hadoop.hdfs.DFSClient$DFSOutputStream.access$2700(DFSClient.java:2691)
+	at org.apache.hadoop.hdfs.DFSClient$DFSOutputStream$DataStreamer.run(DFSClient.java:2932)
+
+2013-03-01 20:51:19,813 WARN org.apache.hadoop.hdfs.DFSClient (Thread-18): Error Recovery for block null bad datanode[0] nodes == null
+2013-03-01 20:51:19,813 WARN org.apache.hadoop.hdfs.DFSClient (Thread-18): Could not get block locations. Source file "/mnt/var/lib/hadoop/tmp/mapred/system/jobtracker.info" - Aborting...
+2013-03-01 20:51:19,814 WARN org.apache.hadoop.mapred.JobTracker (main): Writing to file hdfs://10.241.23.229:9000/mnt/var/lib/hadoop/tmp/mapred/system/jobtracker.info failed!
+2013-03-01 20:51:19,814 WARN org.apache.hadoop.mapred.JobTracker (main): FileSystem is not ready yet!
+2013-03-01 20:51:19,817 WARN org.apache.hadoop.mapred.JobTracker (main): Failed to initialize recovery manager. 
+org.apache.hadoop.ipc.RemoteException: java.io.IOException: File /mnt/var/lib/hadoop/tmp/mapred/system/jobtracker.info could only be replicated to 0 nodes, instead of 1
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getAdditionalBlock(FSNamesystem.java:1569)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.addBlock(NameNode.java:698)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:573)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1393)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1389)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1132)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:1387)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:1067)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:225)
+	at $Proxy5.addBlock(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:83)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:59)
+	at $Proxy5.addBlock(Unknown Source)
+	at org.apache.hadoop.hdfs.DFSClient$DFSOutputStream.locateFollowingBlock(DFSClient.java:3633)
+	at org.apache.hadoop.hdfs.DFSClient$DFSOutputStream.nextBlockOutputStream(DFSClient.java:3493)
+	at org.apache.hadoop.hdfs.DFSClient$DFSOutputStream.access$2700(DFSClient.java:2691)
+	at org.apache.hadoop.hdfs.DFSClient$DFSOutputStream$DataStreamer.run(DFSClient.java:2932)
+2013-03-01 20:51:29,819 WARN org.apache.hadoop.mapred.JobTracker (main): Retrying...
+2013-03-01 20:51:29,857 WARN org.apache.hadoop.hdfs.DFSClient (Thread-21): DataStreamer Exception: org.apache.hadoop.ipc.RemoteException: java.io.IOException: File /mnt/var/lib/hadoop/tmp/mapred/system/jobtracker.info could only be replicated to 0 nodes, instead of 1
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getAdditionalBlock(FSNamesystem.java:1569)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.addBlock(NameNode.java:698)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:573)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1393)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1389)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1132)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:1387)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:1067)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:225)
+	at $Proxy5.addBlock(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:83)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:59)
+	at $Proxy5.addBlock(Unknown Source)
+	at org.apache.hadoop.hdfs.DFSClient$DFSOutputStream.locateFollowingBlock(DFSClient.java:3633)
+	at org.apache.hadoop.hdfs.DFSClient$DFSOutputStream.nextBlockOutputStream(DFSClient.java:3493)
+	at org.apache.hadoop.hdfs.DFSClient$DFSOutputStream.access$2700(DFSClient.java:2691)
+	at org.apache.hadoop.hdfs.DFSClient$DFSOutputStream$DataStreamer.run(DFSClient.java:2932)
+
+2013-03-01 20:51:29,858 WARN org.apache.hadoop.hdfs.DFSClient (Thread-21): Error Recovery for block null bad datanode[0] nodes == null
+2013-03-01 20:51:29,858 WARN org.apache.hadoop.hdfs.DFSClient (Thread-21): Could not get block locations. Source file "/mnt/var/lib/hadoop/tmp/mapred/system/jobtracker.info" - Aborting...
+2013-03-01 20:51:29,858 WARN org.apache.hadoop.mapred.JobTracker (main): Writing to file hdfs://10.241.23.229:9000/mnt/var/lib/hadoop/tmp/mapred/system/jobtracker.info failed!
+2013-03-01 20:51:29,858 WARN org.apache.hadoop.mapred.JobTracker (main): FileSystem is not ready yet!
+2013-03-01 20:51:29,879 WARN org.apache.hadoop.mapred.JobTracker (main): Failed to initialize recovery manager. 
+org.apache.hadoop.ipc.RemoteException: java.io.IOException: File /mnt/var/lib/hadoop/tmp/mapred/system/jobtracker.info could only be replicated to 0 nodes, instead of 1
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getAdditionalBlock(FSNamesystem.java:1569)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.addBlock(NameNode.java:698)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:573)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1393)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1389)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1132)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:1387)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:1067)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:225)
+	at $Proxy5.addBlock(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:83)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:59)
+	at $Proxy5.addBlock(Unknown Source)
+	at org.apache.hadoop.hdfs.DFSClient$DFSOutputStream.locateFollowingBlock(DFSClient.java:3633)
+	at org.apache.hadoop.hdfs.DFSClient$DFSOutputStream.nextBlockOutputStream(DFSClient.java:3493)
+	at org.apache.hadoop.hdfs.DFSClient$DFSOutputStream.access$2700(DFSClient.java:2691)
+	at org.apache.hadoop.hdfs.DFSClient$DFSOutputStream$DataStreamer.run(DFSClient.java:2932)
+2013-03-01 20:51:39,880 WARN org.apache.hadoop.mapred.JobTracker (main): Retrying...
+2013-03-01 20:51:39,920 WARN org.apache.hadoop.hdfs.DFSClient (Thread-23): DataStreamer Exception: org.apache.hadoop.ipc.RemoteException: java.io.IOException: File /mnt/var/lib/hadoop/tmp/mapred/system/jobtracker.info could only be replicated to 0 nodes, instead of 1
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getAdditionalBlock(FSNamesystem.java:1569)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.addBlock(NameNode.java:698)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:573)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1393)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1389)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1132)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:1387)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:1067)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:225)
+	at $Proxy5.addBlock(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:83)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:59)
+	at $Proxy5.addBlock(Unknown Source)
+	at org.apache.hadoop.hdfs.DFSClient$DFSOutputStream.locateFollowingBlock(DFSClient.java:3633)
+	at org.apache.hadoop.hdfs.DFSClient$DFSOutputStream.nextBlockOutputStream(DFSClient.java:3493)
+	at org.apache.hadoop.hdfs.DFSClient$DFSOutputStream.access$2700(DFSClient.java:2691)
+	at org.apache.hadoop.hdfs.DFSClient$DFSOutputStream$DataStreamer.run(DFSClient.java:2932)
+
+2013-03-01 20:51:39,920 WARN org.apache.hadoop.hdfs.DFSClient (Thread-23): Error Recovery for block null bad datanode[0] nodes == null
+2013-03-01 20:51:39,920 WARN org.apache.hadoop.hdfs.DFSClient (Thread-23): Could not get block locations. Source file "/mnt/var/lib/hadoop/tmp/mapred/system/jobtracker.info" - Aborting...
+2013-03-01 20:51:39,920 WARN org.apache.hadoop.mapred.JobTracker (main): Writing to file hdfs://10.241.23.229:9000/mnt/var/lib/hadoop/tmp/mapred/system/jobtracker.info failed!
+2013-03-01 20:51:39,920 WARN org.apache.hadoop.mapred.JobTracker (main): FileSystem is not ready yet!
+2013-03-01 20:51:39,921 WARN org.apache.hadoop.mapred.JobTracker (main): Failed to initialize recovery manager. 
+org.apache.hadoop.ipc.RemoteException: java.io.IOException: File /mnt/var/lib/hadoop/tmp/mapred/system/jobtracker.info could only be replicated to 0 nodes, instead of 1
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getAdditionalBlock(FSNamesystem.java:1569)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.addBlock(NameNode.java:698)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:573)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1393)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1389)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1132)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:1387)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:1067)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:225)
+	at $Proxy5.addBlock(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:83)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:59)
+	at $Proxy5.addBlock(Unknown Source)
+	at org.apache.hadoop.hdfs.DFSClient$DFSOutputStream.locateFollowingBlock(DFSClient.java:3633)
+	at org.apache.hadoop.hdfs.DFSClient$DFSOutputStream.nextBlockOutputStream(DFSClient.java:3493)
+	at org.apache.hadoop.hdfs.DFSClient$DFSOutputStream.access$2700(DFSClient.java:2691)
+	at org.apache.hadoop.hdfs.DFSClient$DFSOutputStream$DataStreamer.run(DFSClient.java:2932)
+2013-03-01 20:51:49,922 WARN org.apache.hadoop.mapred.JobTracker (main): Retrying...
+2013-03-01 20:51:49,940 WARN org.apache.hadoop.hdfs.DFSClient (Thread-24): DataStreamer Exception: org.apache.hadoop.ipc.RemoteException: java.io.IOException: File /mnt/var/lib/hadoop/tmp/mapred/system/jobtracker.info could only be replicated to 0 nodes, instead of 1
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getAdditionalBlock(FSNamesystem.java:1569)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.addBlock(NameNode.java:698)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:573)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1393)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1389)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1132)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:1387)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:1067)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:225)
+	at $Proxy5.addBlock(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:83)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:59)
+	at $Proxy5.addBlock(Unknown Source)
+	at org.apache.hadoop.hdfs.DFSClient$DFSOutputStream.locateFollowingBlock(DFSClient.java:3633)
+	at org.apache.hadoop.hdfs.DFSClient$DFSOutputStream.nextBlockOutputStream(DFSClient.java:3493)
+	at org.apache.hadoop.hdfs.DFSClient$DFSOutputStream.access$2700(DFSClient.java:2691)
+	at org.apache.hadoop.hdfs.DFSClient$DFSOutputStream$DataStreamer.run(DFSClient.java:2932)
+
+2013-03-01 20:51:49,940 WARN org.apache.hadoop.hdfs.DFSClient (Thread-24): Error Recovery for block null bad datanode[0] nodes == null
+2013-03-01 20:51:49,940 WARN org.apache.hadoop.hdfs.DFSClient (Thread-24): Could not get block locations. Source file "/mnt/var/lib/hadoop/tmp/mapred/system/jobtracker.info" - Aborting...
+2013-03-01 20:51:49,943 WARN org.apache.hadoop.mapred.JobTracker (main): Writing to file hdfs://10.241.23.229:9000/mnt/var/lib/hadoop/tmp/mapred/system/jobtracker.info failed!
+2013-03-01 20:51:49,943 WARN org.apache.hadoop.mapred.JobTracker (main): FileSystem is not ready yet!
+2013-03-01 20:51:49,990 WARN org.apache.hadoop.mapred.JobTracker (main): Failed to initialize recovery manager. 
+org.apache.hadoop.ipc.RemoteException: java.io.IOException: File /mnt/var/lib/hadoop/tmp/mapred/system/jobtracker.info could only be replicated to 0 nodes, instead of 1
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getAdditionalBlock(FSNamesystem.java:1569)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.addBlock(NameNode.java:698)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:573)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1393)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1389)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1132)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:1387)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:1067)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:225)
+	at $Proxy5.addBlock(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:83)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:59)
+	at $Proxy5.addBlock(Unknown Source)
+	at org.apache.hadoop.hdfs.DFSClient$DFSOutputStream.locateFollowingBlock(DFSClient.java:3633)
+	at org.apache.hadoop.hdfs.DFSClient$DFSOutputStream.nextBlockOutputStream(DFSClient.java:3493)
+	at org.apache.hadoop.hdfs.DFSClient$DFSOutputStream.access$2700(DFSClient.java:2691)
+	at org.apache.hadoop.hdfs.DFSClient$DFSOutputStream$DataStreamer.run(DFSClient.java:2932)
+2013-03-01 20:51:59,998 WARN org.apache.hadoop.mapred.JobTracker (main): Retrying...
+2013-03-01 20:52:01,499 INFO org.apache.hadoop.mapred.JobTracker (main): Refreshing hosts information
+2013-03-01 20:52:01,665 INFO org.apache.hadoop.util.HostsFileReader (main): Setting the includes file to 
+2013-03-01 20:52:01,665 INFO org.apache.hadoop.util.HostsFileReader (main): Setting the excludes file to 
+2013-03-01 20:52:01,665 INFO org.apache.hadoop.util.HostsFileReader (main): Refreshing hosts (include/exclude) list
+2013-03-01 20:52:01,666 INFO org.apache.hadoop.mapred.JobTracker (main): Decommissioning 0 nodes
+2013-03-01 20:52:01,724 INFO org.apache.hadoop.ipc.Server (IPC Server Responder): IPC Server Responder: starting
+2013-03-01 20:52:01,725 INFO org.apache.hadoop.ipc.Server (IPC Server listener on 9001): IPC Server listener on 9001: starting
+2013-03-01 20:52:01,725 INFO org.apache.hadoop.ipc.Server (IPC Server handler 0 on 9001): IPC Server handler 0 on 9001: starting
+2013-03-01 20:52:01,725 INFO org.apache.hadoop.ipc.Server (IPC Server handler 1 on 9001): IPC Server handler 1 on 9001: starting
+2013-03-01 20:52:01,725 INFO org.apache.hadoop.ipc.Server (IPC Server handler 2 on 9001): IPC Server handler 2 on 9001: starting
+2013-03-01 20:52:01,727 INFO org.apache.hadoop.ipc.Server (IPC Server handler 3 on 9001): IPC Server handler 3 on 9001: starting
+2013-03-01 20:52:01,728 INFO org.apache.hadoop.ipc.Server (IPC Server handler 4 on 9001): IPC Server handler 4 on 9001: starting
+2013-03-01 20:52:01,732 INFO org.apache.hadoop.ipc.Server (IPC Server handler 5 on 9001): IPC Server handler 5 on 9001: starting
+2013-03-01 20:52:01,732 INFO org.apache.hadoop.ipc.Server (IPC Server handler 6 on 9001): IPC Server handler 6 on 9001: starting
+2013-03-01 20:52:01,733 INFO org.apache.hadoop.ipc.Server (IPC Server handler 7 on 9001): IPC Server handler 7 on 9001: starting
+2013-03-01 20:52:01,733 INFO org.apache.hadoop.ipc.Server (IPC Server handler 8 on 9001): IPC Server handler 8 on 9001: starting
+2013-03-01 20:52:01,733 INFO org.apache.hadoop.ipc.Server (IPC Server handler 9 on 9001): IPC Server handler 9 on 9001: starting
+2013-03-01 20:52:01,735 INFO org.apache.hadoop.ipc.Server (IPC Server handler 10 on 9001): IPC Server handler 10 on 9001: starting
+2013-03-01 20:52:01,736 INFO org.apache.hadoop.ipc.Server (IPC Server handler 11 on 9001): IPC Server handler 11 on 9001: starting
+2013-03-01 20:52:01,740 INFO org.apache.hadoop.ipc.Server (IPC Server handler 12 on 9001): IPC Server handler 12 on 9001: starting
+2013-03-01 20:52:01,740 INFO org.apache.hadoop.ipc.Server (IPC Server handler 13 on 9001): IPC Server handler 13 on 9001: starting
+2013-03-01 20:52:01,742 INFO org.apache.hadoop.ipc.Server (IPC Server handler 14 on 9001): IPC Server handler 14 on 9001: starting
+2013-03-01 20:52:01,742 INFO org.apache.hadoop.ipc.Server (IPC Server handler 15 on 9001): IPC Server handler 15 on 9001: starting
+2013-03-01 20:52:01,791 INFO org.apache.hadoop.ipc.Server (IPC Server handler 16 on 9001): IPC Server handler 16 on 9001: starting
+2013-03-01 20:52:01,792 INFO org.apache.hadoop.ipc.Server (IPC Server handler 19 on 9001): IPC Server handler 19 on 9001: starting
+2013-03-01 20:52:01,792 INFO org.apache.hadoop.ipc.Server (IPC Server handler 20 on 9001): IPC Server handler 20 on 9001: starting
+2013-03-01 20:52:01,792 INFO org.apache.hadoop.ipc.Server (IPC Server handler 21 on 9001): IPC Server handler 21 on 9001: starting
+2013-03-01 20:52:01,792 INFO org.apache.hadoop.ipc.Server (IPC Server handler 22 on 9001): IPC Server handler 22 on 9001: starting
+2013-03-01 20:52:01,792 INFO org.apache.hadoop.ipc.Server (IPC Server handler 23 on 9001): IPC Server handler 23 on 9001: starting
+2013-03-01 20:52:01,792 INFO org.apache.hadoop.ipc.Server (IPC Server handler 24 on 9001): IPC Server handler 24 on 9001: starting
+2013-03-01 20:52:01,793 INFO org.apache.hadoop.ipc.Server (IPC Server handler 25 on 9001): IPC Server handler 25 on 9001: starting
+2013-03-01 20:52:01,793 INFO org.apache.hadoop.ipc.Server (IPC Server handler 26 on 9001): IPC Server handler 26 on 9001: starting
+2013-03-01 20:52:01,793 INFO org.apache.hadoop.ipc.Server (IPC Server handler 27 on 9001): IPC Server handler 27 on 9001: starting
+2013-03-01 20:52:01,793 INFO org.apache.hadoop.ipc.Server (IPC Server handler 28 on 9001): IPC Server handler 28 on 9001: starting
+2013-03-01 20:52:01,799 INFO org.apache.hadoop.ipc.Server (IPC Server handler 30 on 9001): IPC Server handler 30 on 9001: starting
+2013-03-01 20:52:01,800 INFO org.apache.hadoop.ipc.Server (IPC Server handler 33 on 9001): IPC Server handler 33 on 9001: starting
+2013-03-01 20:52:01,800 INFO org.apache.hadoop.ipc.Server (IPC Server handler 34 on 9001): IPC Server handler 34 on 9001: starting
+2013-03-01 20:52:01,800 INFO org.apache.hadoop.ipc.Server (IPC Server handler 35 on 9001): IPC Server handler 35 on 9001: starting
+2013-03-01 20:52:01,800 INFO org.apache.hadoop.ipc.Server (IPC Server handler 36 on 9001): IPC Server handler 36 on 9001: starting
+2013-03-01 20:52:01,801 INFO org.apache.hadoop.ipc.Server (IPC Server handler 37 on 9001): IPC Server handler 37 on 9001: starting
+2013-03-01 20:52:01,801 INFO org.apache.hadoop.ipc.Server (IPC Server handler 38 on 9001): IPC Server handler 38 on 9001: starting
+2013-03-01 20:52:01,801 INFO org.apache.hadoop.ipc.Server (IPC Server handler 39 on 9001): IPC Server handler 39 on 9001: starting
+2013-03-01 20:52:01,956 INFO org.apache.hadoop.ipc.Server (IPC Server handler 31 on 9001): IPC Server handler 31 on 9001: starting
+2013-03-01 20:52:01,956 INFO org.apache.hadoop.ipc.Server (IPC Server handler 32 on 9001): IPC Server handler 32 on 9001: starting
+2013-03-01 20:52:01,956 INFO org.apache.hadoop.ipc.Server (IPC Server handler 63 on 9001): IPC Server handler 63 on 9001: starting
+2013-03-01 20:52:01,956 INFO org.apache.hadoop.ipc.Server (IPC Server handler 40 on 9001): IPC Server handler 40 on 9001: starting
+2013-03-01 20:52:01,956 INFO org.apache.hadoop.ipc.Server (IPC Server handler 29 on 9001): IPC Server handler 29 on 9001: starting
+2013-03-01 20:52:01,956 INFO org.apache.hadoop.ipc.Server (IPC Server handler 18 on 9001): IPC Server handler 18 on 9001: starting
+2013-03-01 20:52:01,956 INFO org.apache.hadoop.ipc.Server (IPC Server handler 17 on 9001): IPC Server handler 17 on 9001: starting
+2013-03-01 20:52:01,956 INFO org.apache.hadoop.mapred.JobTracker (main): Starting RUNNING
+2013-03-01 20:52:01,956 INFO org.apache.hadoop.ipc.Server (IPC Server handler 62 on 9001): IPC Server handler 62 on 9001: starting
+2013-03-01 20:52:01,956 INFO org.apache.hadoop.ipc.Server (IPC Server handler 61 on 9001): IPC Server handler 61 on 9001: starting
+2013-03-01 20:52:01,957 INFO org.apache.hadoop.ipc.Server (IPC Server handler 60 on 9001): IPC Server handler 60 on 9001: starting
+2013-03-01 20:52:01,957 INFO org.apache.hadoop.ipc.Server (IPC Server handler 59 on 9001): IPC Server handler 59 on 9001: starting
+2013-03-01 20:52:01,957 INFO org.apache.hadoop.ipc.Server (IPC Server handler 58 on 9001): IPC Server handler 58 on 9001: starting
+2013-03-01 20:52:01,957 INFO org.apache.hadoop.ipc.Server (IPC Server handler 57 on 9001): IPC Server handler 57 on 9001: starting
+2013-03-01 20:52:01,957 INFO org.apache.hadoop.ipc.Server (IPC Server handler 56 on 9001): IPC Server handler 56 on 9001: starting
+2013-03-01 20:52:01,957 INFO org.apache.hadoop.ipc.Server (IPC Server handler 55 on 9001): IPC Server handler 55 on 9001: starting
+2013-03-01 20:52:01,957 INFO org.apache.hadoop.ipc.Server (IPC Server handler 54 on 9001): IPC Server handler 54 on 9001: starting
+2013-03-01 20:52:01,957 INFO org.apache.hadoop.ipc.Server (IPC Server handler 53 on 9001): IPC Server handler 53 on 9001: starting
+2013-03-01 20:52:01,957 INFO org.apache.hadoop.ipc.Server (IPC Server handler 52 on 9001): IPC Server handler 52 on 9001: starting
+2013-03-01 20:52:01,957 INFO org.apache.hadoop.ipc.Server (IPC Server handler 51 on 9001): IPC Server handler 51 on 9001: starting
+2013-03-01 20:52:01,957 INFO org.apache.hadoop.ipc.Server (IPC Server handler 50 on 9001): IPC Server handler 50 on 9001: starting
+2013-03-01 20:52:01,957 INFO org.apache.hadoop.ipc.Server (IPC Server handler 49 on 9001): IPC Server handler 49 on 9001: starting
+2013-03-01 20:52:01,957 INFO org.apache.hadoop.ipc.Server (IPC Server handler 48 on 9001): IPC Server handler 48 on 9001: starting
+2013-03-01 20:52:01,957 INFO org.apache.hadoop.ipc.Server (IPC Server handler 47 on 9001): IPC Server handler 47 on 9001: starting
+2013-03-01 20:52:01,957 INFO org.apache.hadoop.ipc.Server (IPC Server handler 46 on 9001): IPC Server handler 46 on 9001: starting
+2013-03-01 20:52:01,958 INFO org.apache.hadoop.ipc.Server (IPC Server handler 45 on 9001): IPC Server handler 45 on 9001: starting
+2013-03-01 20:52:01,958 INFO org.apache.hadoop.ipc.Server (IPC Server handler 44 on 9001): IPC Server handler 44 on 9001: starting
+2013-03-01 20:52:01,958 INFO org.apache.hadoop.ipc.Server (IPC Server handler 43 on 9001): IPC Server handler 43 on 9001: starting
+2013-03-01 20:52:01,958 INFO org.apache.hadoop.ipc.Server (IPC Server handler 42 on 9001): IPC Server handler 42 on 9001: starting
+2013-03-01 20:52:01,958 INFO org.apache.hadoop.ipc.Server (IPC Server handler 41 on 9001): IPC Server handler 41 on 9001: starting
+2013-03-01 20:52:02,191 WARN org.apache.hadoop.ipc.Server (IPC Server handler 0 on 9001): IPC Server Responder, call getProtocolVersion(org.apache.hadoop.mapred.JobSubmissionProtocol, 28) from 10.241.23.229:57676: output error
+2013-03-01 20:52:02,191 INFO org.apache.hadoop.ipc.Server (IPC Server handler 0 on 9001): IPC Server handler 0 on 9001 caught: java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.ensureWriteOpen(SocketChannelImpl.java:133)
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:324)
+	at org.apache.hadoop.ipc.Server.channelWrite(Server.java:1705)
+	at org.apache.hadoop.ipc.Server.access$2000(Server.java:95)
+	at org.apache.hadoop.ipc.Server$Responder.processResponse(Server.java:741)
+	at org.apache.hadoop.ipc.Server$Responder.doRespond(Server.java:805)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:1421)
+
+2013-03-01 20:52:08,490 INFO org.apache.hadoop.net.NetworkTopology (IPC Server handler 8 on 9001): Adding a new node: /default-rack/10.208.54.148
+2013-03-01 20:52:08,492 INFO org.apache.hadoop.mapred.JobTracker (IPC Server handler 8 on 9001): Adding tracker tracker_10.208.54.148:localhost/127.0.0.1:47006 to host 10.208.54.148
+2013-03-01 20:52:09,355 INFO org.apache.hadoop.net.NetworkTopology (IPC Server handler 12 on 9001): Adding a new node: /default-rack/10.208.42.195
+2013-03-01 20:52:09,356 INFO org.apache.hadoop.mapred.JobTracker (IPC Server handler 12 on 9001): Adding tracker tracker_10.208.42.195:localhost/127.0.0.1:48612 to host 10.208.42.195
+2013-03-01 20:52:49,513 INFO org.apache.hadoop.mapred.JobInProgress (IPC Server handler 58 on 9001): job_201303012050_0001: nMaps=8 nReduces=3 max=-1
+2013-03-01 20:52:49,537 INFO org.apache.hadoop.mapred.JobTracker (IPC Server handler 58 on 9001): Job job_201303012050_0001 added successfully for user 'hadoop' to queue 'default'
+2013-03-01 20:52:49,538 INFO org.apache.hadoop.mapred.AuditLogger (IPC Server handler 58 on 9001): USER=hadoop	IP=10.241.23.229	OPERATION=SUBMIT_JOB	TARGET=job_201303012050_0001	RESULT=SUCCESS
+2013-03-01 20:52:49,551 INFO org.apache.hadoop.mapred.JobTracker (pool-1-thread-1): Initializing job_201303012050_0001
+2013-03-01 20:52:49,551 INFO org.apache.hadoop.mapred.JobInProgress (pool-1-thread-1): Initializing job_201303012050_0001
+2013-03-01 20:52:49,979 INFO org.apache.hadoop.mapred.JobInProgress (pool-1-thread-1): jobToken generated and stored with users keys in /mnt/var/lib/hadoop/tmp/mapred/system/job_201303012050_0001/jobToken
+2013-03-01 20:52:50,046 INFO org.apache.hadoop.mapred.JobInProgress (pool-1-thread-1): Input size for job job_201303012050_0001 = 1777168. Number of splits = 8
+2013-03-01 20:52:50,046 INFO org.apache.hadoop.net.NetworkTopology (pool-1-thread-1): Adding a new node: /default-rack/localhost
+2013-03-01 20:52:50,046 INFO org.apache.hadoop.mapred.JobInProgress (pool-1-thread-1): tip:task_201303012050_0001_m_000000 has split on node:/default-rack/localhost
+2013-03-01 20:52:50,046 INFO org.apache.hadoop.mapred.JobInProgress (pool-1-thread-1): tip:task_201303012050_0001_m_000001 has split on node:/default-rack/localhost
+2013-03-01 20:52:50,047 INFO org.apache.hadoop.mapred.JobInProgress (pool-1-thread-1): tip:task_201303012050_0001_m_000002 has split on node:/default-rack/localhost
+2013-03-01 20:52:50,047 INFO org.apache.hadoop.mapred.JobInProgress (pool-1-thread-1): tip:task_201303012050_0001_m_000003 has split on node:/default-rack/localhost
+2013-03-01 20:52:50,047 INFO org.apache.hadoop.mapred.JobInProgress (pool-1-thread-1): tip:task_201303012050_0001_m_000004 has split on node:/default-rack/localhost
+2013-03-01 20:52:50,047 INFO org.apache.hadoop.mapred.JobInProgress (pool-1-thread-1): tip:task_201303012050_0001_m_000005 has split on node:/default-rack/localhost
+2013-03-01 20:52:50,047 INFO org.apache.hadoop.mapred.JobInProgress (pool-1-thread-1): tip:task_201303012050_0001_m_000006 has split on node:/default-rack/localhost
+2013-03-01 20:52:50,047 INFO org.apache.hadoop.mapred.JobInProgress (pool-1-thread-1): tip:task_201303012050_0001_m_000007 has split on node:/default-rack/localhost
+2013-03-01 20:52:50,047 INFO org.apache.hadoop.mapred.JobInProgress (pool-1-thread-1): job_201303012050_0001 LOCALITY_WAIT_FACTOR=0.5
+2013-03-01 20:52:50,052 INFO org.apache.hadoop.mapred.JobInProgress (pool-1-thread-1): Job job_201303012050_0001 initialized successfully with 8 map tasks and 3 reduce tasks.
+2013-03-01 20:52:50,720 INFO org.apache.hadoop.mapred.JobTracker (IPC Server handler 52 on 9001): Adding task (JOB_SETUP) 'attempt_201303012050_0001_m_000009_0' to tip task_201303012050_0001_m_000009, for tracker 'tracker_10.208.54.148:localhost/127.0.0.1:47006'
+2013-03-01 20:53:02,809 INFO org.apache.hadoop.mapred.JobInProgress (IPC Server handler 37 on 9001): Task 'attempt_201303012050_0001_m_000009_0' has completed task_201303012050_0001_m_000009 successfully.
+2013-03-01 20:53:02,836 INFO org.apache.hadoop.mapred.JobTracker (IPC Server handler 37 on 9001): Adding task (MAP) 'attempt_201303012050_0001_m_000000_0' to tip task_201303012050_0001_m_000000, for tracker 'tracker_10.208.54.148:localhost/127.0.0.1:47006'
+2013-03-01 20:53:02,836 INFO org.apache.hadoop.mapred.JobInProgress (IPC Server handler 37 on 9001): Choosing rack-local task task_201303012050_0001_m_000000
+2013-03-01 20:53:02,836 INFO org.apache.hadoop.mapred.JobTracker (IPC Server handler 37 on 9001): Adding task (MAP) 'attempt_201303012050_0001_m_000001_0' to tip task_201303012050_0001_m_000001, for tracker 'tracker_10.208.54.148:localhost/127.0.0.1:47006'
+2013-03-01 20:53:02,837 INFO org.apache.hadoop.mapred.JobInProgress (IPC Server handler 37 on 9001): Choosing rack-local task task_201303012050_0001_m_000001
+2013-03-01 20:53:03,681 INFO org.apache.hadoop.mapred.JobTracker (IPC Server handler 32 on 9001): Adding task (MAP) 'attempt_201303012050_0001_m_000002_0' to tip task_201303012050_0001_m_000002, for tracker 'tracker_10.208.42.195:localhost/127.0.0.1:48612'
+2013-03-01 20:53:03,681 INFO org.apache.hadoop.mapred.JobInProgress (IPC Server handler 32 on 9001): Choosing rack-local task task_201303012050_0001_m_000002
+2013-03-01 20:53:03,682 INFO org.apache.hadoop.mapred.JobTracker (IPC Server handler 32 on 9001): Adding task (MAP) 'attempt_201303012050_0001_m_000003_0' to tip task_201303012050_0001_m_000003, for tracker 'tracker_10.208.42.195:localhost/127.0.0.1:48612'
+2013-03-01 20:53:03,682 INFO org.apache.hadoop.mapred.JobInProgress (IPC Server handler 32 on 9001): Choosing rack-local task task_201303012050_0001_m_000003
+2013-03-01 20:53:11,863 INFO org.apache.hadoop.mapred.JobInProgress (IPC Server handler 1 on 9001): Task 'attempt_201303012050_0001_m_000000_0' has completed task_201303012050_0001_m_000000 successfully.
+2013-03-01 20:53:11,865 INFO org.apache.hadoop.mapred.JobTracker (IPC Server handler 1 on 9001): Adding task (MAP) 'attempt_201303012050_0001_m_000004_0' to tip task_201303012050_0001_m_000004, for tracker 'tracker_10.208.54.148:localhost/127.0.0.1:47006'
+2013-03-01 20:53:11,865 INFO org.apache.hadoop.mapred.JobInProgress (IPC Server handler 1 on 9001): Choosing rack-local task task_201303012050_0001_m_000004
+2013-03-01 20:53:11,887 INFO org.apache.hadoop.mapred.JobTracker (IPC Server handler 1 on 9001): Adding task (REDUCE) 'attempt_201303012050_0001_r_000000_0' to tip task_201303012050_0001_r_000000, for tracker 'tracker_10.208.54.148:localhost/127.0.0.1:47006'
+2013-03-01 20:53:12,891 INFO org.apache.hadoop.mapred.JobTracker (IPC Server handler 6 on 9001): Adding task (REDUCE) 'attempt_201303012050_0001_r_000001_0' to tip task_201303012050_0001_r_000001, for tracker 'tracker_10.208.42.195:localhost/127.0.0.1:48612'
+2013-03-01 20:53:14,936 INFO org.apache.hadoop.mapred.JobInProgress (IPC Server handler 14 on 9001): Task 'attempt_201303012050_0001_m_000001_0' has completed task_201303012050_0001_m_000001 successfully.
+2013-03-01 20:53:14,962 INFO org.apache.hadoop.mapred.JobTracker (IPC Server handler 14 on 9001): Adding task (MAP) 'attempt_201303012050_0001_m_000005_0' to tip task_201303012050_0001_m_000005, for tracker 'tracker_10.208.54.148:localhost/127.0.0.1:47006'
+2013-03-01 20:53:14,962 INFO org.apache.hadoop.mapred.JobInProgress (IPC Server handler 14 on 9001): Choosing rack-local task task_201303012050_0001_m_000005
+2013-03-01 20:53:17,966 INFO org.apache.hadoop.mapred.JobInProgress (IPC Server handler 30 on 9001): Task 'attempt_201303012050_0001_m_000004_0' has completed task_201303012050_0001_m_000004 successfully.
+2013-03-01 20:53:17,968 INFO org.apache.hadoop.mapred.JobTracker (IPC Server handler 30 on 9001): Adding task (MAP) 'attempt_201303012050_0001_m_000006_0' to tip task_201303012050_0001_m_000006, for tracker 'tracker_10.208.54.148:localhost/127.0.0.1:47006'
+2013-03-01 20:53:17,968 INFO org.apache.hadoop.mapred.JobInProgress (IPC Server handler 30 on 9001): Choosing rack-local task task_201303012050_0001_m_000006
+2013-03-01 20:53:21,070 INFO org.apache.hadoop.mapred.JobInProgress (IPC Server handler 17 on 9001): Task 'attempt_201303012050_0001_m_000005_0' has completed task_201303012050_0001_m_000005 successfully.
+2013-03-01 20:53:21,071 INFO org.apache.hadoop.mapred.JobTracker (IPC Server handler 17 on 9001): Adding task (MAP) 'attempt_201303012050_0001_m_000007_0' to tip task_201303012050_0001_m_000007, for tracker 'tracker_10.208.54.148:localhost/127.0.0.1:47006'
+2013-03-01 20:53:21,071 INFO org.apache.hadoop.mapred.JobInProgress (IPC Server handler 17 on 9001): Choosing rack-local task task_201303012050_0001_m_000007
+2013-03-01 20:53:24,076 INFO org.apache.hadoop.mapred.JobInProgress (IPC Server handler 51 on 9001): Task 'attempt_201303012050_0001_m_000006_0' has completed task_201303012050_0001_m_000006 successfully.
+2013-03-01 20:53:27,080 INFO org.apache.hadoop.mapred.JobInProgress (IPC Server handler 0 on 9001): Task 'attempt_201303012050_0001_m_000007_0' has completed task_201303012050_0001_m_000007 successfully.
+2013-03-01 20:53:31,185 INFO org.apache.hadoop.mapred.JobInProgress (IPC Server handler 22 on 9001): Task 'attempt_201303012050_0001_m_000003_0' has completed task_201303012050_0001_m_000003 successfully.
+2013-03-01 20:53:34,191 INFO org.apache.hadoop.mapred.JobInProgress (IPC Server handler 38 on 9001): Task 'attempt_201303012050_0001_m_000002_0' has completed task_201303012050_0001_m_000002 successfully.
+2013-03-01 20:53:43,263 INFO org.apache.hadoop.mapred.JobInProgress (IPC Server handler 7 on 9001): Task 'attempt_201303012050_0001_r_000001_0' has completed task_201303012050_0001_r_000001 successfully.
+2013-03-01 20:53:43,265 INFO org.apache.hadoop.mapred.JobTracker (IPC Server handler 7 on 9001): Adding task (REDUCE) 'attempt_201303012050_0001_r_000002_0' to tip task_201303012050_0001_r_000002, for tracker 'tracker_10.208.42.195:localhost/127.0.0.1:48612'
+2013-03-01 20:53:45,119 INFO org.apache.hadoop.mapred.JobInProgress (IPC Server handler 16 on 9001): Task 'attempt_201303012050_0001_r_000000_0' has completed task_201303012050_0001_r_000000 successfully.
+2013-03-01 20:53:51,126 INFO org.apache.hadoop.mapred.JobTracker (IPC Server handler 17 on 9001): Adding task (REDUCE) 'attempt_201303012050_0001_r_000002_1' to tip task_201303012050_0001_r_000002, for tracker 'tracker_10.208.54.148:localhost/127.0.0.1:47006'
+2013-03-01 20:53:55,301 INFO org.apache.hadoop.mapred.JobInProgress (IPC Server handler 45 on 9001): Task 'attempt_201303012050_0001_r_000002_0' has completed task_201303012050_0001_r_000002 successfully.
+2013-03-01 20:53:55,305 INFO org.apache.hadoop.mapred.JobTracker (IPC Server handler 45 on 9001): Adding task (JOB_CLEANUP) 'attempt_201303012050_0001_m_000008_0' to tip task_201303012050_0001_m_000008, for tracker 'tracker_10.208.42.195:localhost/127.0.0.1:48612'
+2013-03-01 20:54:01,311 INFO org.apache.hadoop.mapred.JobInProgress (IPC Server handler 22 on 9001): Task 'attempt_201303012050_0001_m_000008_0' has completed task_201303012050_0001_m_000008 successfully.
+2013-03-01 20:54:01,312 INFO org.apache.hadoop.mapred.JobInProgress (IPC Server handler 22 on 9001): Job job_201303012050_0001 has completed successfully.
+2013-03-01 20:54:01,315 INFO org.apache.hadoop.mapred.JobInProgress$JobSummary (IPC Server handler 22 on 9001): jobId=job_201303012050_0001,submitTime=1362171169345,launchTime=1362171170047,firstMapTaskLaunchTime=1362171182835,firstReduceTaskLaunchTime=1362171191865,firstJobSetupTaskLaunchTime=1362171170662,firstJobCleanupTaskLaunchTime=1362171235305,finishTime=1362171241312,numMaps=8,numSlotsPerMap=1,numReduces=3,numSlotsPerReduce=1,user=hadoop,queue=default,status=SUCCEEDED,mapSlotSeconds=92,reduceSlotsSeconds=72,clusterMapCapacity=4,clusterReduceCapacity=2,jobName=streamjob3857432618594779380.jar
+2013-03-01 20:54:01,376 INFO org.apache.hadoop.mapred.JobTracker (IPC Server handler 22 on 9001): Removing task 'attempt_201303012050_0001_m_000002_0'
+2013-03-01 20:54:01,376 INFO org.apache.hadoop.mapred.JobTracker (IPC Server handler 22 on 9001): Removing task 'attempt_201303012050_0001_m_000003_0'
+2013-03-01 20:54:01,377 INFO org.apache.hadoop.mapred.JobTracker (IPC Server handler 22 on 9001): Removing task 'attempt_201303012050_0001_m_000008_0'
+2013-03-01 20:54:01,377 INFO org.apache.hadoop.mapred.JobTracker (IPC Server handler 22 on 9001): Removing task 'attempt_201303012050_0001_r_000001_0'
+2013-03-01 20:54:01,377 INFO org.apache.hadoop.mapred.JobTracker (IPC Server handler 22 on 9001): Removing task 'attempt_201303012050_0001_r_000002_0'
+2013-03-01 20:54:01,378 INFO org.apache.hadoop.mapred.JobHistory (pool-3-thread-1): Creating DONE subfolder at file:/mnt/var/log/hadoop/history/done/version-1/domU-12-31-39-05-14-17.compute-1.internal_1362171070950_/2013/03/01/000000
+2013-03-01 20:54:01,385 INFO org.apache.hadoop.mapred.JobHistory (pool-3-thread-1): Moving file:/mnt/var/log/hadoop/history/job_201303012050_0001_1362171169345_hadoop_streamjob3857432618594779380.jar to file:/mnt/var/log/hadoop/history/done/version-1/domU-12-31-39-05-14-17.compute-1.internal_1362171070950_/2013/03/01/000000
+2013-03-01 20:54:01,445 INFO org.apache.hadoop.mapred.JobHistory (pool-3-thread-1): Moving file:/mnt/var/log/hadoop/history/job_201303012050_0001_conf.xml to file:/mnt/var/log/hadoop/history/done/version-1/domU-12-31-39-05-14-17.compute-1.internal_1362171070950_/2013/03/01/000000
+2013-03-01 20:54:03,139 INFO org.apache.hadoop.mapred.JobTracker (IPC Server handler 27 on 9001): Removing task 'attempt_201303012050_0001_m_000000_0'
+2013-03-01 20:54:03,140 INFO org.apache.hadoop.mapred.JobTracker (IPC Server handler 27 on 9001): Removing task 'attempt_201303012050_0001_m_000001_0'
+2013-03-01 20:54:03,140 INFO org.apache.hadoop.mapred.JobTracker (IPC Server handler 27 on 9001): Removing task 'attempt_201303012050_0001_m_000004_0'
+2013-03-01 20:54:03,140 INFO org.apache.hadoop.mapred.JobTracker (IPC Server handler 27 on 9001): Removing task 'attempt_201303012050_0001_m_000005_0'
+2013-03-01 20:54:03,140 INFO org.apache.hadoop.mapred.JobTracker (IPC Server handler 27 on 9001): Removing task 'attempt_201303012050_0001_m_000006_0'
+2013-03-01 20:54:03,140 INFO org.apache.hadoop.mapred.JobTracker (IPC Server handler 27 on 9001): Removing task 'attempt_201303012050_0001_m_000007_0'
+2013-03-01 20:54:03,140 INFO org.apache.hadoop.mapred.JobTracker (IPC Server handler 27 on 9001): Removing task 'attempt_201303012050_0001_m_000009_0'
+2013-03-01 20:54:03,140 INFO org.apache.hadoop.mapred.JobTracker (IPC Server handler 27 on 9001): Removing task 'attempt_201303012050_0001_r_000000_0'
+2013-03-01 20:54:03,140 INFO org.apache.hadoop.mapred.JobTracker (IPC Server handler 27 on 9001): Removing task 'attempt_201303012050_0001_r_000002_1'

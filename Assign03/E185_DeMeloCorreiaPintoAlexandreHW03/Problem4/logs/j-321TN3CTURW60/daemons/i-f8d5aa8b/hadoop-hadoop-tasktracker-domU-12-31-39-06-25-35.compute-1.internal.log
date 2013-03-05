@@ -1,0 +1,155 @@
+2013-03-01 20:51:19,775 INFO org.apache.hadoop.mapred.TaskTracker (main): STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting TaskTracker
+STARTUP_MSG:   host = domU-12-31-39-06-25-35.compute-1.internal/10.208.42.195
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 1.0.3
+STARTUP_MSG:   build = http://aws.amazon.com/elasticmapreduce/ -r 81753a9828927efacf083f483d3b09b72bdbc9bf; compiled by 'Elastic MapReduce' on Thu Feb 21 03:13:22 UTC 2013
+************************************************************/
+2013-03-01 20:51:21,291 INFO org.apache.hadoop.metrics2.impl.MetricsConfig (main): loaded properties from hadoop-metrics2.properties
+2013-03-01 20:51:21,334 INFO org.apache.hadoop.metrics2.sink.cloudwatch.CloudWatchSink (main): Initializing the CloudWatchSink for metrics.
+2013-03-01 20:51:21,713 INFO org.apache.hadoop.metrics2.impl.MetricsSinkAdapter (main): Sink file started
+2013-03-01 20:51:21,940 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter (main): MBean for source MetricsSystem,sub=Stats registered.
+2013-03-01 20:51:21,941 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl (main): Scheduled snapshot period at 300 second(s).
+2013-03-01 20:51:21,941 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl (main): TaskTracker metrics system started
+2013-03-01 20:51:25,048 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter (main): MBean for source ugi registered.
+2013-03-01 20:51:25,059 WARN org.apache.hadoop.metrics2.impl.MetricsSystemImpl (main): Source name ugi already exists!
+2013-03-01 20:51:31,713 INFO org.mortbay.log (main): Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2013-03-01 20:51:31,894 INFO org.apache.hadoop.http.HttpServer (main): Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2013-03-01 20:51:31,969 INFO org.apache.hadoop.mapred.TaskLogsTruncater (main): Initializing logs' truncater with mapRetainSize=-1 and reduceRetainSize=-1
+2013-03-01 20:51:31,972 INFO org.apache.hadoop.mapred.TaskTracker (main): Starting tasktracker with owner as hadoop
+2013-03-01 20:51:31,973 INFO org.apache.hadoop.mapred.TaskTracker (main): Good mapred local directories are: /mnt/var/lib/hadoop/mapred
+2013-03-01 20:51:32,001 INFO org.apache.hadoop.util.NativeCodeLoader (main): Loaded the native-hadoop library
+2013-03-01 20:51:32,008 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter (main): MBean for source jvm registered.
+2013-03-01 20:51:32,008 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter (main): MBean for source TaskTrackerMetrics registered.
+2013-03-01 20:51:32,097 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter (main): MBean for source RpcDetailedActivityForPort48612 registered.
+2013-03-01 20:51:32,097 INFO org.apache.hadoop.ipc.Server (pool-1-thread-1): Starting SocketReader
+2013-03-01 20:51:32,100 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter (main): MBean for source RpcActivityForPort48612 registered.
+2013-03-01 20:51:32,125 INFO org.apache.hadoop.mapred.TaskTracker (main): TaskTracker up at: localhost/127.0.0.1:48612
+2013-03-01 20:51:32,125 INFO org.apache.hadoop.mapred.TaskTracker (main): Starting tracker tracker_10.208.42.195:localhost/127.0.0.1:48612
+2013-03-01 20:51:32,102 INFO org.apache.hadoop.ipc.Server (IPC Server Responder): IPC Server Responder: starting
+2013-03-01 20:51:32,103 INFO org.apache.hadoop.ipc.Server (IPC Server listener on 48612): IPC Server listener on 48612: starting
+2013-03-01 20:51:32,125 INFO org.apache.hadoop.ipc.Server (IPC Server handler 0 on 48612): IPC Server handler 0 on 48612: starting
+2013-03-01 20:51:32,125 INFO org.apache.hadoop.ipc.Server (IPC Server handler 1 on 48612): IPC Server handler 1 on 48612: starting
+2013-03-01 20:51:32,125 INFO org.apache.hadoop.ipc.Server (IPC Server handler 2 on 48612): IPC Server handler 2 on 48612: starting
+2013-03-01 20:51:32,130 INFO org.apache.hadoop.ipc.Server (IPC Server handler 3 on 48612): IPC Server handler 3 on 48612: starting
+2013-03-01 20:52:02,797 INFO org.apache.hadoop.mapred.TaskTracker (Map-events fetcher for all reduce tasks on tracker_10.208.42.195:localhost/127.0.0.1:48612): Starting thread: Map-events fetcher for all reduce tasks on tracker_10.208.42.195:localhost/127.0.0.1:48612
+2013-03-01 20:52:02,840 INFO org.apache.hadoop.util.ProcessTree (main): setsid exited with exit code 0
+2013-03-01 20:52:02,853 INFO org.apache.hadoop.mapred.TaskTracker (main):  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@74cb02
+2013-03-01 20:52:02,870 WARN org.apache.hadoop.mapred.TaskTracker (main): TaskTracker's totalMemoryAllottedForTasks is -1. TaskMemoryManager is disabled.
+2013-03-01 20:52:02,878 INFO org.apache.hadoop.mapred.IndexCache (main): IndexCache created with max memory = 10485760
+2013-03-01 20:52:02,951 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter (main): MBean for source ShuffleServerMetrics registered.
+2013-03-01 20:52:02,955 INFO org.apache.hadoop.http.HttpServer (main): Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 9103
+2013-03-01 20:52:02,956 INFO org.apache.hadoop.http.HttpServer (main): listener.getLocalPort() returned 9103 webServer.getConnectors()[0].getLocalPort() returned 9103
+2013-03-01 20:52:02,956 INFO org.apache.hadoop.http.HttpServer (main): Jetty bound to port 9103
+2013-03-01 20:52:02,956 INFO org.mortbay.log (main): jetty-6.1.26
+2013-03-01 20:52:05,473 INFO org.mortbay.log (main): Started SelectChannelConnector@0.0.0.0:9103
+2013-03-01 20:52:05,473 INFO org.apache.hadoop.mapred.TaskTracker (main): FILE_CACHE_SIZE for mapOutputServlet set to : 2000
+2013-03-01 20:53:03,753 INFO org.apache.hadoop.mapred.TaskTracker (main): LaunchTaskAction (registerTask): attempt_201303012050_0001_m_000002_0 task's state:UNASSIGNED
+2013-03-01 20:53:03,756 INFO org.apache.hadoop.mapred.TaskTracker (TaskLauncher for MAP tasks): Trying to launch : attempt_201303012050_0001_m_000002_0 which needs 1 slots
+2013-03-01 20:53:03,756 INFO org.apache.hadoop.mapred.TaskTracker (TaskLauncher for MAP tasks): In TaskLauncher, current free slots : 2 and trying to launch attempt_201303012050_0001_m_000002_0 which needs 1 slots
+2013-03-01 20:53:03,759 INFO org.apache.hadoop.mapred.TaskTracker (main): LaunchTaskAction (registerTask): attempt_201303012050_0001_m_000003_0 task's state:UNASSIGNED
+2013-03-01 20:53:03,759 INFO org.apache.hadoop.mapred.TaskTracker (TaskLauncher for MAP tasks): Trying to launch : attempt_201303012050_0001_m_000003_0 which needs 1 slots
+2013-03-01 20:53:03,759 INFO org.apache.hadoop.mapred.TaskTracker (TaskLauncher for MAP tasks): In TaskLauncher, current free slots : 1 and trying to launch attempt_201303012050_0001_m_000003_0 which needs 1 slots
+2013-03-01 20:53:07,118 INFO org.apache.hadoop.filecache.TrackerDistributedCacheManager (Thread-31): Creating max_temperature_map.rb in /mnt/var/lib/hadoop/mapred/taskTracker/distcache/6757537103519144582_128329246_665494802/alexcp-e185-assign03-p4-scripts-work--8406481084361569264 with rwxr-xr-x
+2013-03-01 20:53:07,119 INFO org.apache.hadoop.fs.s3native.NativeS3FileSystem (Thread-31): Opening '/max_temperature_map.rb' for reading
+2013-03-01 20:53:07,350 INFO org.apache.hadoop.filecache.TrackerDistributedCacheManager (Thread-31): Cached s3n://alexcp-e185-assign03-p4-scripts/max_temperature_map.rb#max_temperature_map.rb as /mnt/var/lib/hadoop/mapred/taskTracker/distcache/6757537103519144582_128329246_665494802/alexcp-e185-assign03-p4-scripts/max_temperature_map.rb
+2013-03-01 20:53:07,406 INFO org.apache.hadoop.filecache.TrackerDistributedCacheManager (Thread-31): Cached s3n://alexcp-e185-assign03-p4-scripts/max_temperature_map.rb#max_temperature_map.rb as /mnt/var/lib/hadoop/mapred/taskTracker/distcache/6757537103519144582_128329246_665494802/alexcp-e185-assign03-p4-scripts/max_temperature_map.rb
+2013-03-01 20:53:07,449 INFO org.apache.hadoop.filecache.TrackerDistributedCacheManager (Thread-31): Creating max_temperature_reduce.rb in /mnt/var/lib/hadoop/mapred/taskTracker/distcache/-9205755958474963239_-1776559844_665495802/alexcp-e185-assign03-p4-scripts-work-8409032283483900630 with rwxr-xr-x
+2013-03-01 20:53:07,450 INFO org.apache.hadoop.fs.s3native.NativeS3FileSystem (Thread-31): Opening '/max_temperature_reduce.rb' for reading
+2013-03-01 20:53:07,642 INFO org.apache.hadoop.filecache.TrackerDistributedCacheManager (Thread-31): Cached s3n://alexcp-e185-assign03-p4-scripts/max_temperature_reduce.rb#max_temperature_reduce.rb as /mnt/var/lib/hadoop/mapred/taskTracker/distcache/-9205755958474963239_-1776559844_665495802/alexcp-e185-assign03-p4-scripts/max_temperature_reduce.rb
+2013-03-01 20:53:07,643 INFO org.apache.hadoop.filecache.TrackerDistributedCacheManager (Thread-31): Cached s3n://alexcp-e185-assign03-p4-scripts/max_temperature_reduce.rb#max_temperature_reduce.rb as /mnt/var/lib/hadoop/mapred/taskTracker/distcache/-9205755958474963239_-1776559844_665495802/alexcp-e185-assign03-p4-scripts/max_temperature_reduce.rb
+2013-03-01 20:53:07,866 INFO org.apache.hadoop.mapred.JobLocalizer (Thread-31): Initializing user hadoop on this TT.
+2013-03-01 20:53:08,960 INFO org.apache.hadoop.mapred.JvmManager (Thread-35): In JvmRunner constructed JVM ID: jvm_201303012050_0001_m_-1953396175
+2013-03-01 20:53:08,960 INFO org.apache.hadoop.mapred.JvmManager (Thread-35): JVM Runner jvm_201303012050_0001_m_-1953396175 spawned.
+2013-03-01 20:53:09,017 INFO org.apache.hadoop.mapred.TaskController (JVM Runner jvm_201303012050_0001_m_-1953396175 spawned.): Writing commands to /mnt/var/lib/hadoop/mapred/ttprivate/taskTracker/hadoop/jobcache/job_201303012050_0001/attempt_201303012050_0001_m_000003_0/taskjvm.sh
+2013-03-01 20:53:09,103 INFO org.apache.hadoop.mapred.JvmManager (Thread-36): In JvmRunner constructed JVM ID: jvm_201303012050_0001_m_-1639544354
+2013-03-01 20:53:09,103 INFO org.apache.hadoop.mapred.JvmManager (Thread-36): JVM Runner jvm_201303012050_0001_m_-1639544354 spawned.
+2013-03-01 20:53:09,150 INFO org.apache.hadoop.mapred.TaskController (JVM Runner jvm_201303012050_0001_m_-1639544354 spawned.): Writing commands to /mnt/var/lib/hadoop/mapred/ttprivate/taskTracker/hadoop/jobcache/job_201303012050_0001/attempt_201303012050_0001_m_000002_0/taskjvm.sh
+2013-03-01 20:53:12,870 INFO org.apache.hadoop.mapred.TaskTracker (main): LaunchTaskAction (registerTask): attempt_201303012050_0001_r_000001_0 task's state:UNASSIGNED
+2013-03-01 20:53:12,870 INFO org.apache.hadoop.mapred.TaskTracker (TaskLauncher for REDUCE tasks): Trying to launch : attempt_201303012050_0001_r_000001_0 which needs 1 slots
+2013-03-01 20:53:12,870 INFO org.apache.hadoop.mapred.TaskTracker (TaskLauncher for REDUCE tasks): In TaskLauncher, current free slots : 1 and trying to launch attempt_201303012050_0001_r_000001_0 which needs 1 slots
+2013-03-01 20:53:13,407 INFO org.apache.hadoop.mapred.JvmManager (Thread-42): In JvmRunner constructed JVM ID: jvm_201303012050_0001_r_-1953396175
+2013-03-01 20:53:13,407 INFO org.apache.hadoop.mapred.JvmManager (Thread-42): JVM Runner jvm_201303012050_0001_r_-1953396175 spawned.
+2013-03-01 20:53:13,408 INFO org.apache.hadoop.mapred.TaskController (JVM Runner jvm_201303012050_0001_r_-1953396175 spawned.): Writing commands to /mnt/var/lib/hadoop/mapred/ttprivate/taskTracker/hadoop/jobcache/job_201303012050_0001/attempt_201303012050_0001_r_000001_0/taskjvm.sh
+2013-03-01 20:53:14,588 INFO org.apache.hadoop.mapred.TaskTracker (IPC Server handler 2 on 48612): JVM with ID: jvm_201303012050_0001_m_-1953396175 given task: attempt_201303012050_0001_m_000003_0
+2013-03-01 20:53:16,256 INFO org.apache.hadoop.mapred.TaskTracker (IPC Server handler 3 on 48612): JVM with ID: jvm_201303012050_0001_m_-1639544354 given task: attempt_201303012050_0001_m_000002_0
+2013-03-01 20:53:21,492 INFO org.apache.hadoop.mapred.TaskTracker (IPC Server handler 2 on 48612): JVM with ID: jvm_201303012050_0001_r_-1953396175 given task: attempt_201303012050_0001_r_000001_0
+2013-03-01 20:53:27,746 INFO org.apache.hadoop.mapred.TaskTracker (IPC Server handler 3 on 48612): attempt_201303012050_0001_m_000003_0 0.5900659% Records R/W=972/1
+2013-03-01 20:53:28,520 INFO org.apache.hadoop.mapred.TaskTracker (IPC Server handler 1 on 48612): attempt_201303012050_0001_m_000002_0 0.0% s3n://alexcp-e185-assign03-p4-data/data/1901:222146+222146
+2013-03-01 20:53:30,760 INFO org.apache.hadoop.mapred.TaskTracker (IPC Server handler 1 on 48612): attempt_201303012050_0001_m_000003_0 1.0% Records R/W=972/1
+2013-03-01 20:53:30,763 INFO org.apache.hadoop.mapred.TaskTracker (IPC Server handler 2 on 48612): attempt_201303012050_0001_m_000003_0 1.0% Records R/W=972/1
+2013-03-01 20:53:30,765 INFO org.apache.hadoop.mapred.TaskTracker (IPC Server handler 3 on 48612): Task attempt_201303012050_0001_m_000003_0 is done.
+2013-03-01 20:53:30,765 INFO org.apache.hadoop.mapred.TaskTracker (IPC Server handler 3 on 48612): reported output size for attempt_201303012050_0001_m_000003_0  was 4860
+2013-03-01 20:53:30,815 INFO org.apache.hadoop.mapred.TaskTracker (Thread-35): addFreeSlot : current free slots : 1
+2013-03-01 20:53:31,525 INFO org.apache.hadoop.mapred.TaskTracker (IPC Server handler 0 on 48612): attempt_201303012050_0001_m_000002_0 1.0% Records R/W=969/1
+2013-03-01 20:53:31,526 INFO org.apache.hadoop.mapred.TaskTracker (IPC Server handler 1 on 48612): Task attempt_201303012050_0001_m_000002_0 is done.
+2013-03-01 20:53:31,526 INFO org.apache.hadoop.mapred.TaskTracker (IPC Server handler 1 on 48612): reported output size for attempt_201303012050_0001_m_000002_0  was 4937
+2013-03-01 20:53:31,526 INFO org.apache.hadoop.mapred.TaskTracker (Thread-36): addFreeSlot : current free slots : 2
+2013-03-01 20:53:33,347 INFO org.apache.hadoop.mapred.TaskTracker (IPC Server handler 2 on 48612): attempt_201303012050_0001_r_000001_0 0.0% reduce > copy > 
+2013-03-01 20:53:33,674 INFO org.apache.hadoop.io.nativeio.NativeIO (7247615@qtp-4101839-1): Initialized cache for UID to User mapping with a cache timeout of 14400 seconds.
+2013-03-01 20:53:33,674 INFO org.apache.hadoop.io.nativeio.NativeIO (7247615@qtp-4101839-1): Got UserName hadoop for UID 106 from the native implementation
+2013-03-01 20:53:33,749 INFO org.apache.hadoop.mapred.TaskTracker.clienttrace (7247615@qtp-4101839-1): src: 10.208.42.195:9103, dest: 10.208.42.195:33668, bytes: 16, op: MAPRED_SHUFFLE, cliID: attempt_201303012050_0001_m_000003_0, duration: 162578580
+2013-03-01 20:53:36,138 INFO org.apache.hadoop.mapred.TaskTracker.clienttrace (7247615@qtp-4101839-1): src: 10.208.42.195:9103, dest: 10.208.54.148:55486, bytes: 4828, op: MAPRED_SHUFFLE, cliID: attempt_201303012050_0001_m_000003_0, duration: 3995008
+2013-03-01 20:53:38,794 INFO org.apache.hadoop.mapred.TaskTracker.clienttrace (7247615@qtp-4101839-1): src: 10.208.42.195:9103, dest: 10.208.42.195:33670, bytes: 16, op: MAPRED_SHUFFLE, cliID: attempt_201303012050_0001_m_000002_0, duration: 1003107
+2013-03-01 20:53:39,363 INFO org.apache.hadoop.mapred.TaskTracker (IPC Server handler 2 on 48612): attempt_201303012050_0001_r_000001_0 0.33333334% reduce > copy (8 of 8 at 0.00 MB/s)
+2013-03-01 20:53:39,479 INFO org.apache.hadoop.mapred.TaskTracker (IPC Server handler 3 on 48612): attempt_201303012050_0001_r_000001_0 0.33333334% reduce > copy (8 of 8 at 0.00 MB/s)
+2013-03-01 20:53:39,626 INFO org.apache.hadoop.mapred.TaskTracker (IPC Server handler 0 on 48612): attempt_201303012050_0001_r_000001_0 0.33333334% reduce > copy (8 of 8 at 0.00 MB/s)
+2013-03-01 20:53:41,144 INFO org.apache.hadoop.mapred.TaskTracker.clienttrace (7247615@qtp-4101839-1): src: 10.208.42.195:9103, dest: 10.208.54.148:55487, bytes: 4905, op: MAPRED_SHUFFLE, cliID: attempt_201303012050_0001_m_000002_0, duration: 468020
+2013-03-01 20:53:42,380 INFO org.apache.hadoop.mapred.TaskTracker (IPC Server handler 1 on 48612): attempt_201303012050_0001_r_000001_0 1.0% Records R/W=6565/1 > reduce
+2013-03-01 20:53:42,381 INFO org.apache.hadoop.mapred.TaskTracker (IPC Server handler 2 on 48612): attempt_201303012050_0001_r_000001_0 1.0% Records R/W=6565/1 > reduce
+2013-03-01 20:53:42,382 INFO org.apache.hadoop.mapred.TaskTracker (IPC Server handler 3 on 48612): Task attempt_201303012050_0001_r_000001_0 is done.
+2013-03-01 20:53:42,382 INFO org.apache.hadoop.mapred.TaskTracker (IPC Server handler 3 on 48612): reported output size for attempt_201303012050_0001_r_000001_0  was -1
+2013-03-01 20:53:42,436 INFO org.apache.hadoop.mapred.TaskTracker (Thread-42): addFreeSlot : current free slots : 1
+2013-03-01 20:53:43,240 INFO org.apache.hadoop.mapred.TaskTracker (main): LaunchTaskAction (registerTask): attempt_201303012050_0001_r_000002_0 task's state:UNASSIGNED
+2013-03-01 20:53:43,240 INFO org.apache.hadoop.mapred.TaskTracker (TaskLauncher for REDUCE tasks): Trying to launch : attempt_201303012050_0001_r_000002_0 which needs 1 slots
+2013-03-01 20:53:43,240 INFO org.apache.hadoop.mapred.TaskTracker (TaskLauncher for REDUCE tasks): In TaskLauncher, current free slots : 1 and trying to launch attempt_201303012050_0001_r_000002_0 which needs 1 slots
+2013-03-01 20:53:43,392 INFO org.apache.hadoop.mapred.JvmManager (Thread-48): No new JVM spawned for jobId/taskid: job_201303012050_0001/attempt_201303012050_0001_r_000002_0. Attempting to reuse: jvm_201303012050_0001_r_-1953396175
+2013-03-01 20:53:43,519 INFO org.apache.hadoop.mapred.TaskTracker (IPC Server handler 0 on 48612): JVM with ID: jvm_201303012050_0001_r_-1953396175 given task: attempt_201303012050_0001_r_000002_0
+2013-03-01 20:53:48,241 INFO org.apache.hadoop.mapred.TaskTracker (taskCleanup): Received KillTaskAction for task: attempt_201303012050_0001_r_000001_0
+2013-03-01 20:53:48,241 INFO org.apache.hadoop.mapred.TaskTracker (taskCleanup): About to purge task: attempt_201303012050_0001_r_000001_0
+2013-03-01 20:53:48,768 INFO org.apache.hadoop.mapred.TaskTracker.clienttrace (7247615@qtp-4101839-1): src: 10.208.42.195:9103, dest: 10.208.42.195:33674, bytes: 16, op: MAPRED_SHUFFLE, cliID: attempt_201303012050_0001_m_000003_0, duration: 625314
+2013-03-01 20:53:48,796 INFO org.apache.hadoop.mapred.TaskTracker.clienttrace (7247615@qtp-4101839-1): src: 10.208.42.195:9103, dest: 10.208.42.195:33674, bytes: 16, op: MAPRED_SHUFFLE, cliID: attempt_201303012050_0001_m_000002_0, duration: 397403
+2013-03-01 20:53:49,717 INFO org.apache.hadoop.mapred.TaskTracker (IPC Server handler 0 on 48612): attempt_201303012050_0001_r_000002_0 0.33333334% reduce > copy (8 of 8 at 0.00 MB/s)
+2013-03-01 20:53:49,802 INFO org.apache.hadoop.mapred.TaskTracker (IPC Server handler 1 on 48612): attempt_201303012050_0001_r_000002_0 0.33333334% reduce > copy (8 of 8 at 0.00 MB/s)
+2013-03-01 20:53:49,810 INFO org.apache.hadoop.mapred.TaskTracker (IPC Server handler 2 on 48612): attempt_201303012050_0001_r_000002_0 0.33333334% reduce > copy (8 of 8 at 0.00 MB/s)
+2013-03-01 20:53:52,746 INFO org.apache.hadoop.mapred.TaskTracker (IPC Server handler 3 on 48612): attempt_201303012050_0001_r_000002_0 1.0% reduce > reduce
+2013-03-01 20:53:52,748 INFO org.apache.hadoop.mapred.TaskTracker (IPC Server handler 0 on 48612): attempt_201303012050_0001_r_000002_0 1.0% reduce > reduce
+2013-03-01 20:53:52,749 INFO org.apache.hadoop.mapred.TaskTracker (IPC Server handler 1 on 48612): Task attempt_201303012050_0001_r_000002_0 is done.
+2013-03-01 20:53:52,749 INFO org.apache.hadoop.mapred.TaskTracker (IPC Server handler 1 on 48612): reported output size for attempt_201303012050_0001_r_000002_0  was -1
+2013-03-01 20:53:52,749 INFO org.apache.hadoop.mapred.TaskTracker (Thread-48): addFreeSlot : current free slots : 1
+2013-03-01 20:53:55,282 INFO org.apache.hadoop.mapred.TaskTracker (main): LaunchTaskAction (registerTask): attempt_201303012050_0001_m_000008_0 task's state:UNASSIGNED
+2013-03-01 20:53:55,282 INFO org.apache.hadoop.mapred.TaskTracker (TaskLauncher for MAP tasks): Trying to launch : attempt_201303012050_0001_m_000008_0 which needs 1 slots
+2013-03-01 20:53:55,283 INFO org.apache.hadoop.mapred.TaskTracker (TaskLauncher for MAP tasks): In TaskLauncher, current free slots : 2 and trying to launch attempt_201303012050_0001_m_000008_0 which needs 1 slots
+2013-03-01 20:53:55,377 INFO org.apache.hadoop.mapred.JvmManager (Thread-50): No new JVM spawned for jobId/taskid: job_201303012050_0001/attempt_201303012050_0001_m_000008_0. Attempting to reuse: jvm_201303012050_0001_m_-1953396175
+2013-03-01 20:53:55,430 INFO org.apache.hadoop.mapred.TaskTracker (IPC Server handler 2 on 48612): JVM with ID: jvm_201303012050_0001_m_-1953396175 given task: attempt_201303012050_0001_m_000008_0
+2013-03-01 20:53:55,650 INFO org.apache.hadoop.mapred.TaskTracker (IPC Server handler 3 on 48612): attempt_201303012050_0001_m_000008_0 0.0% 
+2013-03-01 20:53:56,940 INFO org.apache.hadoop.mapred.TaskTracker.clienttrace (7247615@qtp-4101839-1): src: 10.208.42.195:9103, dest: 10.208.54.148:55493, bytes: 16, op: MAPRED_SHUFFLE, cliID: attempt_201303012050_0001_m_000003_0, duration: 388459
+2013-03-01 20:53:56,975 INFO org.apache.hadoop.mapred.TaskTracker.clienttrace (7247615@qtp-4101839-1): src: 10.208.42.195:9103, dest: 10.208.54.148:55493, bytes: 16, op: MAPRED_SHUFFLE, cliID: attempt_201303012050_0001_m_000002_0, duration: 273437
+2013-03-01 20:53:58,568 INFO org.apache.hadoop.mapred.TaskTracker (IPC Server handler 1 on 48612): attempt_201303012050_0001_m_000008_0 0.0% cleanup
+2013-03-01 20:53:58,569 INFO org.apache.hadoop.mapred.TaskTracker (IPC Server handler 2 on 48612): Task attempt_201303012050_0001_m_000008_0 is done.
+2013-03-01 20:53:58,569 INFO org.apache.hadoop.mapred.TaskTracker (IPC Server handler 2 on 48612): reported output size for attempt_201303012050_0001_m_000008_0  was -1
+2013-03-01 20:53:58,569 INFO org.apache.hadoop.mapred.TaskTracker (Thread-50): addFreeSlot : current free slots : 2
+2013-03-01 20:54:00,283 INFO org.apache.hadoop.mapred.TaskTracker (taskCleanup): Received KillTaskAction for task: attempt_201303012050_0001_r_000002_0
+2013-03-01 20:54:00,283 INFO org.apache.hadoop.mapred.TaskTracker (taskCleanup): About to purge task: attempt_201303012050_0001_r_000002_0
+2013-03-01 20:54:06,355 INFO org.apache.hadoop.mapred.TaskTracker (taskCleanup): Received 'KillJobAction' for job: job_201303012050_0001
+2013-03-01 20:54:06,355 INFO org.apache.hadoop.mapred.IndexCache (taskCleanup): Map ID attempt_201303012050_0001_m_000008_0 not found in cache
+2013-03-01 20:54:06,366 INFO org.apache.hadoop.mapred.UserLogCleaner (Thread-6): Adding job_201303012050_0001 for user-log deletion with retainTimeStamp:1362344046356
+2013-03-01 20:54:06,594 INFO org.apache.hadoop.mapred.TaskTracker (IPC Server handler 1 on 48612): Killing JVM jvm_201303012050_0001_m_-1953396175 since job job_201303012050_0001 is dead
+2013-03-01 20:54:06,678 INFO org.apache.hadoop.util.ProcessTree (IPC Server handler 1 on 48612): Killing process group2105 with signal TERM. Exit code 0
+2013-03-01 20:54:06,679 INFO org.apache.hadoop.mapred.TaskTracker (IPC Server handler 2 on 48612): Killing JVM jvm_201303012050_0001_m_-1639544354 since job job_201303012050_0001 is dead
+2013-03-01 20:54:06,796 INFO org.apache.hadoop.util.ProcessTree (IPC Server handler 2 on 48612): Killing process group2106 with signal TERM. Exit code 0
+2013-03-01 20:54:06,818 INFO org.apache.hadoop.mapred.TaskTracker (IPC Server handler 3 on 48612): Killing JVM jvm_201303012050_0001_r_-1953396175 since job job_201303012050_0001 is dead
+2013-03-01 20:54:06,884 WARN org.apache.hadoop.mapred.DefaultTaskController (JVM Runner jvm_201303012050_0001_m_-1953396175 spawned.): Exit code from task is : 143
+2013-03-01 20:54:06,884 INFO org.apache.hadoop.mapred.DefaultTaskController (JVM Runner jvm_201303012050_0001_m_-1953396175 spawned.): Output from DefaultTaskController's launchTask follows:
+2013-03-01 20:54:06,884 INFO org.apache.hadoop.mapred.TaskController (JVM Runner jvm_201303012050_0001_m_-1953396175 spawned.): 
+2013-03-01 20:54:06,884 INFO org.apache.hadoop.mapred.JvmManager (JVM Runner jvm_201303012050_0001_m_-1953396175 spawned.): JVM : jvm_201303012050_0001_m_-1953396175 exited with exit code 143. Number of tasks it ran: 2
+2013-03-01 20:54:06,885 INFO org.apache.hadoop.util.ProcessTree (IPC Server handler 3 on 48612): Killing process group2134 with signal TERM. Exit code 0
+2013-03-01 20:54:07,042 WARN org.apache.hadoop.mapred.DefaultTaskController (JVM Runner jvm_201303012050_0001_m_-1639544354 spawned.): Exit code from task is : 143
+2013-03-01 20:54:07,042 INFO org.apache.hadoop.mapred.DefaultTaskController (JVM Runner jvm_201303012050_0001_m_-1639544354 spawned.): Output from DefaultTaskController's launchTask follows:
+2013-03-01 20:54:07,042 INFO org.apache.hadoop.mapred.TaskController (JVM Runner jvm_201303012050_0001_m_-1639544354 spawned.): 
+2013-03-01 20:54:07,042 INFO org.apache.hadoop.mapred.JvmManager (JVM Runner jvm_201303012050_0001_m_-1639544354 spawned.): JVM : jvm_201303012050_0001_m_-1639544354 exited with exit code 143. Number of tasks it ran: 1
+2013-03-01 20:54:07,248 WARN org.apache.hadoop.mapred.DefaultTaskController (JVM Runner jvm_201303012050_0001_r_-1953396175 spawned.): Exit code from task is : 143
+2013-03-01 20:54:07,248 INFO org.apache.hadoop.mapred.DefaultTaskController (JVM Runner jvm_201303012050_0001_r_-1953396175 spawned.): Output from DefaultTaskController's launchTask follows:
+2013-03-01 20:54:07,248 INFO org.apache.hadoop.mapred.TaskController (JVM Runner jvm_201303012050_0001_r_-1953396175 spawned.): 
+2013-03-01 20:54:07,249 INFO org.apache.hadoop.mapred.JvmManager (JVM Runner jvm_201303012050_0001_r_-1953396175 spawned.): JVM : jvm_201303012050_0001_r_-1953396175 exited with exit code 143. Number of tasks it ran: 2

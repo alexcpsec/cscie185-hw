@@ -1,0 +1,6 @@
+2013-03-01T20:52:36.616Z INFO Fetching jar file.
+2013-03-01T20:52:42.663Z INFO Working dir /mnt/var/lib/hadoop/steps/1
+2013-03-01T20:52:42.663Z INFO Executing /usr/lib/jvm/java-6-sun/bin/java -cp /home/hadoop/conf:/usr/lib/jvm/java-6-sun/lib/tools.jar:/home/hadoop:/home/hadoop/hadoop-tools-1.0.3.jar:/home/hadoop/hadoop-tools.jar:/home/hadoop/hadoop-core.jar:/home/hadoop/hadoop-core-1.0.3.jar:/home/hadoop/lib/*:/home/hadoop/lib/jetty-ext/* -Xmx1000m -Dhadoop.log.dir=/mnt/var/log/hadoop/steps/1 -Dhadoop.log.file=syslog -Dhadoop.home.dir=/home/hadoop -Dhadoop.id.str=hadoop -Dhadoop.root.logger=INFO,DRFA -Djava.io.tmpdir=/mnt/var/lib/hadoop/steps/1/tmp -Djava.library.path=/home/hadoop/native/Linux-i386-32 org.apache.hadoop.util.RunJar /home/hadoop/contrib/streaming/hadoop-streaming.jar -input s3n://alexcp-e185-assign03-p4-data/data -output s3n://alexcp-e185-assign03-p4-output/output -mapper s3n://alexcp-e185-assign03-p4-scripts/max_temperature_map.rb -reducer s3n://alexcp-e185-assign03-p4-scripts/max_temperature_reduce.rb
+2013-03-01T20:54:02.369Z INFO Execution ended with ret val 0
+2013-03-01T20:54:08.465Z INFO Step created jobs: job_201303012050_0001
+2013-03-01T20:54:14.509Z INFO Step succeeded

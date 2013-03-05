@@ -1,0 +1,121 @@
+2013-03-01 20:53:16,684 INFO org.apache.hadoop.util.NativeCodeLoader (main): Loaded the native-hadoop library
+2013-03-01 20:53:16,857 INFO org.apache.hadoop.mapred.TaskRunner (main): Creating symlink: /mnt/var/lib/hadoop/mapred/taskTracker/distcache/5895291575123624517_128329246_665494802/alexcp-e185-assign03-p4-scripts/max_temperature_map.rb <- /mnt/var/lib/hadoop/mapred/taskTracker/hadoop/jobcache/job_201303012050_0001/attempt_201303012050_0001_r_000000_0/work/max_temperature_map.rb
+2013-03-01 20:53:16,889 INFO org.apache.hadoop.mapred.TaskRunner (main): Creating symlink: /mnt/var/lib/hadoop/mapred/taskTracker/distcache/-4589405669996019370_-1776559844_665495802/alexcp-e185-assign03-p4-scripts/max_temperature_reduce.rb <- /mnt/var/lib/hadoop/mapred/taskTracker/hadoop/jobcache/job_201303012050_0001/attempt_201303012050_0001_r_000000_0/work/max_temperature_reduce.rb
+2013-03-01 20:53:16,899 INFO org.apache.hadoop.filecache.TrackerDistributedCacheManager (main): Creating symlink: /mnt/var/lib/hadoop/mapred/taskTracker/hadoop/jobcache/job_201303012050_0001/jars/job.jar <- /mnt/var/lib/hadoop/mapred/taskTracker/hadoop/jobcache/job_201303012050_0001/attempt_201303012050_0001_r_000000_0/work/job.jar
+2013-03-01 20:53:16,902 INFO org.apache.hadoop.filecache.TrackerDistributedCacheManager (main): Creating symlink: /mnt/var/lib/hadoop/mapred/taskTracker/hadoop/jobcache/job_201303012050_0001/jars/.job.jar.crc <- /mnt/var/lib/hadoop/mapred/taskTracker/hadoop/jobcache/job_201303012050_0001/attempt_201303012050_0001_r_000000_0/work/.job.jar.crc
+2013-03-01 20:53:16,948 INFO org.apache.hadoop.filecache.TrackerDistributedCacheManager (main): Creating symlink: /mnt/var/lib/hadoop/mapred/taskTracker/hadoop/jobcache/job_201303012050_0001/jars/META-INF <- /mnt/var/lib/hadoop/mapred/taskTracker/hadoop/jobcache/job_201303012050_0001/attempt_201303012050_0001_r_000000_0/work/META-INF
+2013-03-01 20:53:16,951 INFO org.apache.hadoop.filecache.TrackerDistributedCacheManager (main): Creating symlink: /mnt/var/lib/hadoop/mapred/taskTracker/hadoop/jobcache/job_201303012050_0001/jars/org <- /mnt/var/lib/hadoop/mapred/taskTracker/hadoop/jobcache/job_201303012050_0001/attempt_201303012050_0001_r_000000_0/work/org
+2013-03-01 20:53:17,445 WARN org.apache.hadoop.metrics2.impl.MetricsSystemImpl (main): Source name ugi already exists!
+2013-03-01 20:53:17,602 INFO org.apache.hadoop.mapred.ReduceTask (main): Host name: domU-12-31-39-06-31-66.compute-1.internal
+2013-03-01 20:53:20,246 INFO org.apache.hadoop.util.ProcessTree (main): setsid exited with exit code 0
+2013-03-01 20:53:20,292 INFO org.apache.hadoop.mapred.Task (main):  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@1d59d3c
+2013-03-01 20:53:20,396 WARN org.apache.hadoop.io.compress.snappy.LoadSnappy (main): Snappy native library is available
+2013-03-01 20:53:20,396 INFO org.apache.hadoop.io.compress.snappy.LoadSnappy (main): Snappy native library loaded
+2013-03-01 20:53:20,422 INFO org.apache.hadoop.mapred.ReduceTask (main): ShuffleRamManager: MemoryLimit=204374016, MaxSingleShuffleLimit=51093504
+2013-03-01 20:53:20,452 INFO org.apache.hadoop.io.compress.CodecPool (main): Got brand-new decompressor
+2013-03-01 20:53:20,453 INFO org.apache.hadoop.io.compress.CodecPool (main): Got brand-new decompressor
+2013-03-01 20:53:20,454 INFO org.apache.hadoop.io.compress.CodecPool (main): Got brand-new decompressor
+2013-03-01 20:53:20,456 INFO org.apache.hadoop.io.compress.CodecPool (main): Got brand-new decompressor
+2013-03-01 20:53:20,457 INFO org.apache.hadoop.io.compress.CodecPool (main): Got brand-new decompressor
+2013-03-01 20:53:20,470 INFO org.apache.hadoop.io.compress.CodecPool (main): Got brand-new decompressor
+2013-03-01 20:53:20,475 INFO org.apache.hadoop.io.compress.CodecPool (main): Got brand-new decompressor
+2013-03-01 20:53:20,502 INFO org.apache.hadoop.io.compress.CodecPool (main): Got brand-new decompressor
+2013-03-01 20:53:20,503 INFO org.apache.hadoop.io.compress.CodecPool (main): Got brand-new decompressor
+2013-03-01 20:53:20,526 INFO org.apache.hadoop.io.compress.CodecPool (main): Got brand-new decompressor
+2013-03-01 20:53:20,527 INFO org.apache.hadoop.io.compress.CodecPool (main): Got brand-new decompressor
+2013-03-01 20:53:20,559 INFO org.apache.hadoop.io.compress.CodecPool (main): Got brand-new decompressor
+2013-03-01 20:53:20,567 INFO org.apache.hadoop.io.compress.CodecPool (main): Got brand-new decompressor
+2013-03-01 20:53:20,625 INFO org.apache.hadoop.io.compress.CodecPool (main): Got brand-new decompressor
+2013-03-01 20:53:20,627 INFO org.apache.hadoop.io.compress.CodecPool (main): Got brand-new decompressor
+2013-03-01 20:53:20,628 INFO org.apache.hadoop.io.compress.CodecPool (main): Got brand-new decompressor
+2013-03-01 20:53:20,630 INFO org.apache.hadoop.io.compress.CodecPool (main): Got brand-new decompressor
+2013-03-01 20:53:20,631 INFO org.apache.hadoop.io.compress.CodecPool (main): Got brand-new decompressor
+2013-03-01 20:53:20,632 INFO org.apache.hadoop.io.compress.CodecPool (main): Got brand-new decompressor
+2013-03-01 20:53:20,675 INFO org.apache.hadoop.io.compress.CodecPool (main): Got brand-new decompressor
+2013-03-01 20:53:20,684 INFO org.apache.hadoop.mapred.ReduceTask (Thread for merging on-disk files): attempt_201303012050_0001_r_000000_0 Thread started: Thread for merging on-disk files
+2013-03-01 20:53:20,684 INFO org.apache.hadoop.mapred.ReduceTask (Thread for merging on-disk files): attempt_201303012050_0001_r_000000_0 Thread waiting: Thread for merging on-disk files
+2013-03-01 20:53:20,704 INFO org.apache.hadoop.mapred.ReduceTask (Thread for merging in memory files): attempt_201303012050_0001_r_000000_0 Thread started: Thread for merging in memory files
+2013-03-01 20:53:20,739 INFO org.apache.hadoop.mapred.ReduceTask (main): attempt_201303012050_0001_r_000000_0 Need another 8 map output(s) where 0 is already in progress
+2013-03-01 20:53:20,739 INFO org.apache.hadoop.mapred.ReduceTask (main): attempt_201303012050_0001_r_000000_0 Scheduled 0 outputs (0 slow hosts and0 dup hosts)
+2013-03-01 20:53:20,739 INFO org.apache.hadoop.mapred.ReduceTask (Thread for polling Map Completion Events): attempt_201303012050_0001_r_000000_0 Thread started: Thread for polling Map Completion Events
+2013-03-01 20:53:25,740 INFO org.apache.hadoop.mapred.ReduceTask (main): attempt_201303012050_0001_r_000000_0 Scheduled 1 outputs (0 slow hosts and0 dup hosts)
+2013-03-01 20:53:26,095 INFO org.apache.hadoop.mapred.ReduceTask (main): attempt_201303012050_0001_r_000000_0 Scheduled 1 outputs (0 slow hosts and0 dup hosts)
+2013-03-01 20:53:26,102 INFO org.apache.hadoop.mapred.ReduceTask (main): attempt_201303012050_0001_r_000000_0 Scheduled 1 outputs (0 slow hosts and0 dup hosts)
+2013-03-01 20:53:26,106 INFO org.apache.hadoop.mapred.ReduceTask (main): attempt_201303012050_0001_r_000000_0 Scheduled 1 outputs (0 slow hosts and0 dup hosts)
+2013-03-01 20:53:26,108 INFO org.apache.hadoop.mapred.ReduceTask (main): attempt_201303012050_0001_r_000000_0 Scheduled 1 outputs (0 slow hosts and0 dup hosts)
+2013-03-01 20:53:31,114 INFO org.apache.hadoop.mapred.ReduceTask (main): attempt_201303012050_0001_r_000000_0 Scheduled 1 outputs (0 slow hosts and0 dup hosts)
+2013-03-01 20:53:36,119 INFO org.apache.hadoop.mapred.ReduceTask (main): attempt_201303012050_0001_r_000000_0 Scheduled 1 outputs (0 slow hosts and0 dup hosts)
+2013-03-01 20:53:41,129 INFO org.apache.hadoop.mapred.ReduceTask (main): attempt_201303012050_0001_r_000000_0 Scheduled 1 outputs (0 slow hosts and0 dup hosts)
+2013-03-01 20:53:41,794 INFO org.apache.hadoop.mapred.ReduceTask (Thread for polling Map Completion Events): GetMapEventsThread exiting
+2013-03-01 20:53:41,794 INFO org.apache.hadoop.mapred.ReduceTask (main): getMapsEventsThread joined.
+2013-03-01 20:53:41,795 INFO org.apache.hadoop.mapred.ReduceTask (main): Closed ram manager
+2013-03-01 20:53:41,801 INFO org.apache.hadoop.mapred.ReduceTask (main): Interleaved on-disk merge complete: 0 files left.
+2013-03-01 20:53:41,801 INFO org.apache.hadoop.mapred.ReduceTask (main): In-memory merge complete: 8 files left.
+2013-03-01 20:53:41,808 INFO org.apache.hadoop.mapred.Merger (main): Merging 8 sorted segments
+2013-03-01 20:53:41,808 INFO org.apache.hadoop.mapred.Merger (main): Down to the last merge-pass, with 4 segments left of total size: 85340 bytes
+2013-03-01 20:53:41,811 INFO org.apache.hadoop.io.compress.CodecPool (main): Got brand-new compressor
+2013-03-01 20:53:41,996 INFO org.apache.hadoop.mapred.ReduceTask (main): Merged 8 segments, 85348 bytes to disk to satisfy reduce memory limit
+2013-03-01 20:53:41,996 INFO org.apache.hadoop.mapred.ReduceTask (main): Merging 1 files, 19069 bytes from disk
+2013-03-01 20:53:41,996 INFO org.apache.hadoop.mapred.ReduceTask (main): Merging 0 segments, 0 bytes from memory into reduce
+2013-03-01 20:53:41,996 INFO org.apache.hadoop.mapred.Merger (main): Merging 1 sorted segments
+2013-03-01 20:53:42,022 INFO org.apache.hadoop.mapred.Merger (main): Down to the last merge-pass, with 1 segments left of total size: 19065 bytes
+2013-03-01 20:53:42,081 INFO org.apache.hadoop.streaming.PipeMapRed (main): PipeMapRed exec [/mnt/var/lib/hadoop/mapred/taskTracker/hadoop/jobcache/job_201303012050_0001/attempt_201303012050_0001_r_000000_0/work/./max_temperature_reduce.rb]
+2013-03-01 20:53:42,306 INFO org.apache.hadoop.fs.s3native.NativeS3FileSystem (main): Creating new file 's3n://alexcp-e185-assign03-p4-output/output/part-00000' in S3
+2013-03-01 20:53:42,335 INFO org.apache.hadoop.streaming.PipeMapRed (main): R/W/S=1/0/0 in:NA [rec/s] out:NA [rec/s]
+2013-03-01 20:53:42,335 INFO org.apache.hadoop.streaming.PipeMapRed (main): R/W/S=10/0/0 in:NA [rec/s] out:NA [rec/s]
+2013-03-01 20:53:42,336 INFO org.apache.hadoop.streaming.PipeMapRed (main): R/W/S=100/0/0 in:NA [rec/s] out:NA [rec/s]
+2013-03-01 20:53:42,343 INFO org.apache.hadoop.streaming.PipeMapRed (main): R/W/S=1000/0/0 in:NA [rec/s] out:NA [rec/s]
+2013-03-01 20:53:42,740 INFO org.apache.hadoop.streaming.PipeMapRed (Thread-38): Records R/W=6564/1
+2013-03-01 20:53:42,740 INFO org.apache.hadoop.streaming.PipeMapRed (Thread-37): MRErrorThread done
+2013-03-01 20:53:42,741 INFO org.apache.hadoop.streaming.PipeMapRed (main): mapRedFinished
+2013-03-01 20:53:42,770 INFO org.apache.hadoop.fs.s3native.Jets3tNativeFileSystemStore (main): s3.putObject alexcp-e185-assign03-p4-output output/part-00000 9
+2013-03-01 20:53:42,771 INFO org.apache.hadoop.mapred.Task (main): Task:attempt_201303012050_0001_r_000000_0 is done. And is in the process of commiting
+2013-03-01 20:53:45,030 INFO org.apache.hadoop.mapred.Task (main): Task 'attempt_201303012050_0001_r_000000_0' done.
+2013-03-01 20:53:45,054 INFO org.apache.hadoop.mapred.TaskLogsTruncater (main): Initializing logs' truncater with mapRetainSize=-1 and reduceRetainSize=-1
+2013-03-01 20:53:45,155 INFO org.apache.hadoop.io.nativeio.NativeIO (main): Initialized cache for UID to User mapping with a cache timeout of 14400 seconds.
+2013-03-01 20:53:45,156 INFO org.apache.hadoop.io.nativeio.NativeIO (main): Got UserName hadoop for UID 106 from the native implementation
+2013-03-01 20:53:51,749 INFO org.apache.hadoop.mapred.TaskRunner (main): Creating symlink: /mnt/var/lib/hadoop/mapred/taskTracker/distcache/5895291575123624517_128329246_665494802/alexcp-e185-assign03-p4-scripts/max_temperature_map.rb <- /mnt/var/lib/hadoop/mapred/taskTracker/hadoop/jobcache/job_201303012050_0001/attempt_201303012050_0001_r_000000_0/work/max_temperature_map.rb
+2013-03-01 20:53:51,752 INFO org.apache.hadoop.mapred.TaskRunner (main): Creating symlink: /mnt/var/lib/hadoop/mapred/taskTracker/distcache/-4589405669996019370_-1776559844_665495802/alexcp-e185-assign03-p4-scripts/max_temperature_reduce.rb <- /mnt/var/lib/hadoop/mapred/taskTracker/hadoop/jobcache/job_201303012050_0001/attempt_201303012050_0001_r_000000_0/work/max_temperature_reduce.rb
+2013-03-01 20:53:51,756 INFO org.apache.hadoop.filecache.TrackerDistributedCacheManager (main): Creating symlink: /mnt/var/lib/hadoop/mapred/taskTracker/hadoop/jobcache/job_201303012050_0001/jars/job.jar <- /mnt/var/lib/hadoop/mapred/taskTracker/hadoop/jobcache/job_201303012050_0001/attempt_201303012050_0001_r_000000_0/work/job.jar
+2013-03-01 20:53:51,773 INFO org.apache.hadoop.filecache.TrackerDistributedCacheManager (main): Creating symlink: /mnt/var/lib/hadoop/mapred/taskTracker/hadoop/jobcache/job_201303012050_0001/jars/.job.jar.crc <- /mnt/var/lib/hadoop/mapred/taskTracker/hadoop/jobcache/job_201303012050_0001/attempt_201303012050_0001_r_000000_0/work/.job.jar.crc
+2013-03-01 20:53:51,778 INFO org.apache.hadoop.filecache.TrackerDistributedCacheManager (main): Creating symlink: /mnt/var/lib/hadoop/mapred/taskTracker/hadoop/jobcache/job_201303012050_0001/jars/META-INF <- /mnt/var/lib/hadoop/mapred/taskTracker/hadoop/jobcache/job_201303012050_0001/attempt_201303012050_0001_r_000000_0/work/META-INF
+2013-03-01 20:53:51,805 INFO org.apache.hadoop.filecache.TrackerDistributedCacheManager (main): Creating symlink: /mnt/var/lib/hadoop/mapred/taskTracker/hadoop/jobcache/job_201303012050_0001/jars/org <- /mnt/var/lib/hadoop/mapred/taskTracker/hadoop/jobcache/job_201303012050_0001/attempt_201303012050_0001_r_000000_0/work/org
+2013-03-01 20:53:51,810 INFO org.apache.hadoop.mapred.TaskLog (main): Starting logging for a new task attempt_201303012050_0001_r_000002_1 in the same JVM as that of the first task /mnt/var/log/hadoop/userlogs/job_201303012050_0001/attempt_201303012050_0001_r_000000_0
+2013-03-01 20:53:51,810 WARN org.apache.hadoop.metrics2.impl.MetricsSystemImpl (main): ReduceTask metrics system already initialized!
+2013-03-01 20:53:51,810 WARN org.apache.hadoop.metrics2.impl.MetricsSystemImpl (main): Source name jvm already exists!
+2013-03-01 20:53:51,831 INFO org.apache.hadoop.mapred.ReduceTask (main): Host name: domU-12-31-39-06-31-66.compute-1.internal
+2013-03-01 20:53:51,910 INFO org.apache.hadoop.mapred.Task (main):  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@f9f91d
+2013-03-01 20:53:51,919 WARN org.apache.hadoop.metrics2.impl.MetricsSystemImpl (main): Source name ShuffleClientMetrics already exists!
+2013-03-01 20:53:51,920 INFO org.apache.hadoop.mapred.ReduceTask (main): ShuffleRamManager: MemoryLimit=204374016, MaxSingleShuffleLimit=51093504
+2013-03-01 20:53:51,924 INFO org.apache.hadoop.mapred.ReduceTask (Thread for merging on-disk files): attempt_201303012050_0001_r_000002_1 Thread started: Thread for merging on-disk files
+2013-03-01 20:53:51,924 INFO org.apache.hadoop.mapred.ReduceTask (Thread for merging on-disk files): attempt_201303012050_0001_r_000002_1 Thread waiting: Thread for merging on-disk files
+2013-03-01 20:53:51,924 INFO org.apache.hadoop.mapred.ReduceTask (Thread for merging in memory files): attempt_201303012050_0001_r_000002_1 Thread started: Thread for merging in memory files
+2013-03-01 20:53:51,924 INFO org.apache.hadoop.mapred.ReduceTask (main): attempt_201303012050_0001_r_000002_1 Need another 8 map output(s) where 0 is already in progress
+2013-03-01 20:53:51,924 INFO org.apache.hadoop.mapred.ReduceTask (main): attempt_201303012050_0001_r_000002_1 Scheduled 0 outputs (0 slow hosts and0 dup hosts)
+2013-03-01 20:53:51,924 INFO org.apache.hadoop.mapred.ReduceTask (Thread for polling Map Completion Events): attempt_201303012050_0001_r_000002_1 Thread started: Thread for polling Map Completion Events
+2013-03-01 20:53:56,925 INFO org.apache.hadoop.mapred.ReduceTask (main): attempt_201303012050_0001_r_000002_1 Scheduled 2 outputs (0 slow hosts and0 dup hosts)
+2013-03-01 20:53:56,959 INFO org.apache.hadoop.mapred.ReduceTask (main): attempt_201303012050_0001_r_000002_1 Scheduled 2 outputs (0 slow hosts and0 dup hosts)
+2013-03-01 20:53:56,964 INFO org.apache.hadoop.mapred.ReduceTask (main): attempt_201303012050_0001_r_000002_1 Scheduled 1 outputs (0 slow hosts and0 dup hosts)
+2013-03-01 20:53:56,966 INFO org.apache.hadoop.mapred.ReduceTask (main): attempt_201303012050_0001_r_000002_1 Scheduled 1 outputs (0 slow hosts and0 dup hosts)
+2013-03-01 20:53:56,970 INFO org.apache.hadoop.mapred.ReduceTask (main): attempt_201303012050_0001_r_000002_1 Scheduled 1 outputs (0 slow hosts and0 dup hosts)
+2013-03-01 20:53:56,990 INFO org.apache.hadoop.mapred.ReduceTask (main): attempt_201303012050_0001_r_000002_1 Scheduled 1 outputs (0 slow hosts and0 dup hosts)
+2013-03-01 20:53:57,959 INFO org.apache.hadoop.mapred.ReduceTask (Thread for polling Map Completion Events): GetMapEventsThread exiting
+2013-03-01 20:53:57,959 INFO org.apache.hadoop.mapred.ReduceTask (main): getMapsEventsThread joined.
+2013-03-01 20:53:57,959 INFO org.apache.hadoop.mapred.ReduceTask (main): Closed ram manager
+2013-03-01 20:53:57,961 INFO org.apache.hadoop.mapred.ReduceTask (main): Interleaved on-disk merge complete: 0 files left.
+2013-03-01 20:53:57,961 INFO org.apache.hadoop.mapred.ReduceTask (main): In-memory merge complete: 8 files left.
+2013-03-01 20:53:57,963 INFO org.apache.hadoop.mapred.Merger (main): Merging 8 sorted segments
+2013-03-01 20:53:57,963 INFO org.apache.hadoop.mapred.Merger (main): Down to the last merge-pass, with 0 segments left of total size: 0 bytes
+2013-03-01 20:53:57,968 INFO org.apache.hadoop.mapred.ReduceTask (main): Merged 8 segments, 16 bytes to disk to satisfy reduce memory limit
+2013-03-01 20:53:57,968 INFO org.apache.hadoop.mapred.ReduceTask (main): Merging 1 files, 20 bytes from disk
+2013-03-01 20:53:57,968 INFO org.apache.hadoop.mapred.ReduceTask (main): Merging 0 segments, 0 bytes from memory into reduce
+2013-03-01 20:53:57,968 INFO org.apache.hadoop.mapred.Merger (main): Merging 1 sorted segments
+2013-03-01 20:53:57,969 INFO org.apache.hadoop.mapred.Merger (main): Down to the last merge-pass, with 0 segments left of total size: 0 bytes
+2013-03-01 20:53:58,017 INFO org.apache.hadoop.streaming.PipeMapRed (main): PipeMapRed exec [/mnt/var/lib/hadoop/mapred/taskTracker/hadoop/jobcache/job_201303012050_0001/attempt_201303012050_0001_r_000000_0/work/./max_temperature_reduce.rb]
+2013-03-01 20:53:58,133 INFO org.apache.hadoop.fs.s3native.NativeS3FileSystem (main): Creating new file 's3n://alexcp-e185-assign03-p4-output/output/part-00002' in S3
+2013-03-01 20:53:58,135 INFO org.apache.hadoop.streaming.PipeMapRed (Thread-66): MRErrorThread done
+2013-03-01 20:53:58,138 INFO org.apache.hadoop.streaming.PipeMapRed (main): mapRedFinished
+2013-03-01 20:53:58,158 INFO org.apache.hadoop.fs.s3native.Jets3tNativeFileSystemStore (main): s3.putObject alexcp-e185-assign03-p4-output output/part-00002 0
+2013-03-01 20:53:58,160 INFO org.apache.hadoop.mapred.Task (main): Task:attempt_201303012050_0001_r_000002_1 is done. And is in the process of commiting
+2013-03-01 20:54:00,880 INFO org.apache.hadoop.mapred.Task (main): Task 'attempt_201303012050_0001_r_000002_1' done.
+2013-03-01 20:54:00,881 INFO org.apache.hadoop.mapred.TaskLogsTruncater (main): Initializing logs' truncater with mapRetainSize=-1 and reduceRetainSize=-1

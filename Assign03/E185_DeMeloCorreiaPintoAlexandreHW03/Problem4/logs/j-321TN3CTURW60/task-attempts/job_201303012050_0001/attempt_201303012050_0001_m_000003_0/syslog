@@ -1,0 +1,57 @@
+2013-03-01 20:53:15,642 INFO org.apache.hadoop.util.NativeCodeLoader (main): Loaded the native-hadoop library
+2013-03-01 20:53:15,933 INFO org.apache.hadoop.mapred.TaskRunner (main): Creating symlink: /mnt/var/lib/hadoop/mapred/taskTracker/distcache/6757537103519144582_128329246_665494802/alexcp-e185-assign03-p4-scripts/max_temperature_map.rb <- /mnt/var/lib/hadoop/mapred/taskTracker/hadoop/jobcache/job_201303012050_0001/attempt_201303012050_0001_m_000003_0/work/max_temperature_map.rb
+2013-03-01 20:53:15,937 INFO org.apache.hadoop.mapred.TaskRunner (main): Creating symlink: /mnt/var/lib/hadoop/mapred/taskTracker/distcache/-9205755958474963239_-1776559844_665495802/alexcp-e185-assign03-p4-scripts/max_temperature_reduce.rb <- /mnt/var/lib/hadoop/mapred/taskTracker/hadoop/jobcache/job_201303012050_0001/attempt_201303012050_0001_m_000003_0/work/max_temperature_reduce.rb
+2013-03-01 20:53:16,038 INFO org.apache.hadoop.filecache.TrackerDistributedCacheManager (main): Creating symlink: /mnt/var/lib/hadoop/mapred/taskTracker/hadoop/jobcache/job_201303012050_0001/jars/job.jar <- /mnt/var/lib/hadoop/mapred/taskTracker/hadoop/jobcache/job_201303012050_0001/attempt_201303012050_0001_m_000003_0/work/job.jar
+2013-03-01 20:53:16,084 INFO org.apache.hadoop.filecache.TrackerDistributedCacheManager (main): Creating symlink: /mnt/var/lib/hadoop/mapred/taskTracker/hadoop/jobcache/job_201303012050_0001/jars/.job.jar.crc <- /mnt/var/lib/hadoop/mapred/taskTracker/hadoop/jobcache/job_201303012050_0001/attempt_201303012050_0001_m_000003_0/work/.job.jar.crc
+2013-03-01 20:53:16,090 INFO org.apache.hadoop.filecache.TrackerDistributedCacheManager (main): Creating symlink: /mnt/var/lib/hadoop/mapred/taskTracker/hadoop/jobcache/job_201303012050_0001/jars/META-INF <- /mnt/var/lib/hadoop/mapred/taskTracker/hadoop/jobcache/job_201303012050_0001/attempt_201303012050_0001_m_000003_0/work/META-INF
+2013-03-01 20:53:16,099 INFO org.apache.hadoop.filecache.TrackerDistributedCacheManager (main): Creating symlink: /mnt/var/lib/hadoop/mapred/taskTracker/hadoop/jobcache/job_201303012050_0001/jars/org <- /mnt/var/lib/hadoop/mapred/taskTracker/hadoop/jobcache/job_201303012050_0001/attempt_201303012050_0001_m_000003_0/work/org
+2013-03-01 20:53:17,734 WARN org.apache.hadoop.metrics2.impl.MetricsSystemImpl (main): Source name ugi already exists!
+2013-03-01 20:53:18,247 INFO org.apache.hadoop.mapred.MapTask (main): Host name: domU-12-31-39-06-25-35.compute-1.internal
+2013-03-01 20:53:22,492 INFO org.apache.hadoop.util.ProcessTree (main): setsid exited with exit code 0
+2013-03-01 20:53:22,522 INFO org.apache.hadoop.mapred.Task (main):  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@baf589
+2013-03-01 20:53:23,373 INFO com.hadoop.compression.lzo.GPLNativeCodeLoader (main): Loaded native gpl library
+2013-03-01 20:53:23,490 WARN com.hadoop.compression.lzo.LzoCodec (main): Could not find build properties file with revision hash
+2013-03-01 20:53:23,490 INFO com.hadoop.compression.lzo.LzoCodec (main): Successfully loaded & initialized native-lzo library [hadoop-lzo rev UNKNOWN]
+2013-03-01 20:53:23,613 WARN org.apache.hadoop.io.compress.snappy.LoadSnappy (main): Snappy native library is available
+2013-03-01 20:53:23,613 INFO org.apache.hadoop.io.compress.snappy.LoadSnappy (main): Snappy native library loaded
+2013-03-01 20:53:23,741 INFO org.apache.hadoop.fs.s3native.NativeS3FileSystem (main): Opening 's3n://alexcp-e185-assign03-p4-data/data/1901' for reading
+2013-03-01 20:53:24,173 INFO org.apache.hadoop.fs.s3native.NativeS3FileSystem (main): Stream for key 'data/1901' seeking to position '444291'
+2013-03-01 20:53:24,625 INFO org.apache.hadoop.mapred.MapTask (main): numReduceTasks: 3
+2013-03-01 20:53:24,656 INFO org.apache.hadoop.mapred.MapTask (main): io.sort.mb = 100
+2013-03-01 20:53:26,911 INFO org.apache.hadoop.mapred.MapTask (main): data buffer = 79691776/99614720
+2013-03-01 20:53:26,911 INFO org.apache.hadoop.mapred.MapTask (main): record buffer = 262144/327680
+2013-03-01 20:53:27,087 INFO org.apache.hadoop.streaming.PipeMapRed (main): PipeMapRed exec [/mnt/var/lib/hadoop/mapred/taskTracker/hadoop/jobcache/job_201303012050_0001/attempt_201303012050_0001_m_000003_0/work/./max_temperature_map.rb]
+2013-03-01 20:53:27,167 INFO org.apache.hadoop.streaming.PipeMapRed (main): R/W/S=1/0/0 in:NA [rec/s] out:NA [rec/s]
+2013-03-01 20:53:27,168 INFO org.apache.hadoop.streaming.PipeMapRed (main): R/W/S=10/0/0 in:NA [rec/s] out:NA [rec/s]
+2013-03-01 20:53:27,172 INFO org.apache.hadoop.streaming.PipeMapRed (main): R/W/S=100/0/0 in:NA [rec/s] out:NA [rec/s]
+2013-03-01 20:53:27,502 INFO org.apache.hadoop.streaming.PipeMapRed (Thread-16): Records R/W=972/1
+2013-03-01 20:53:27,510 INFO org.apache.hadoop.streaming.PipeMapRed (main): R/W/S=1000/250/0 in:NA [rec/s] out:NA [rec/s]
+2013-03-01 20:53:28,026 INFO org.apache.hadoop.streaming.PipeMapRed (Thread-15): MRErrorThread done
+2013-03-01 20:53:28,026 INFO org.apache.hadoop.streaming.PipeMapRed (main): mapRedFinished
+2013-03-01 20:53:28,027 INFO org.apache.hadoop.mapred.MapTask (main): Starting flush of map output
+2013-03-01 20:53:28,048 INFO org.apache.hadoop.io.compress.CodecPool (main): Got brand-new compressor
+2013-03-01 20:53:28,303 INFO org.apache.hadoop.mapred.MapTask (main): Finished spill 0
+2013-03-01 20:53:28,328 INFO org.apache.hadoop.mapred.Task (main): Task:attempt_201303012050_0001_m_000003_0 is done. And is in the process of commiting
+2013-03-01 20:53:30,765 INFO org.apache.hadoop.mapred.Task (main): Task 'attempt_201303012050_0001_m_000003_0' done.
+2013-03-01 20:53:30,768 INFO org.apache.hadoop.mapred.TaskLogsTruncater (main): Initializing logs' truncater with mapRetainSize=-1 and reduceRetainSize=-1
+2013-03-01 20:53:30,862 INFO org.apache.hadoop.io.nativeio.NativeIO (main): Initialized cache for UID to User mapping with a cache timeout of 14400 seconds.
+2013-03-01 20:53:30,862 INFO org.apache.hadoop.io.nativeio.NativeIO (main): Got UserName hadoop for UID 106 from the native implementation
+2013-03-01 20:53:55,456 INFO org.apache.hadoop.mapred.TaskRunner (main): Creating symlink: /mnt/var/lib/hadoop/mapred/taskTracker/distcache/6757537103519144582_128329246_665494802/alexcp-e185-assign03-p4-scripts/max_temperature_map.rb <- /mnt/var/lib/hadoop/mapred/taskTracker/hadoop/jobcache/job_201303012050_0001/attempt_201303012050_0001_m_000003_0/work/max_temperature_map.rb
+2013-03-01 20:53:55,481 INFO org.apache.hadoop.mapred.TaskRunner (main): Creating symlink: /mnt/var/lib/hadoop/mapred/taskTracker/distcache/-9205755958474963239_-1776559844_665495802/alexcp-e185-assign03-p4-scripts/max_temperature_reduce.rb <- /mnt/var/lib/hadoop/mapred/taskTracker/hadoop/jobcache/job_201303012050_0001/attempt_201303012050_0001_m_000003_0/work/max_temperature_reduce.rb
+2013-03-01 20:53:55,486 INFO org.apache.hadoop.filecache.TrackerDistributedCacheManager (main): Creating symlink: /mnt/var/lib/hadoop/mapred/taskTracker/hadoop/jobcache/job_201303012050_0001/jars/job.jar <- /mnt/var/lib/hadoop/mapred/taskTracker/hadoop/jobcache/job_201303012050_0001/attempt_201303012050_0001_m_000003_0/work/job.jar
+2013-03-01 20:53:55,511 INFO org.apache.hadoop.filecache.TrackerDistributedCacheManager (main): Creating symlink: /mnt/var/lib/hadoop/mapred/taskTracker/hadoop/jobcache/job_201303012050_0001/jars/.job.jar.crc <- /mnt/var/lib/hadoop/mapred/taskTracker/hadoop/jobcache/job_201303012050_0001/attempt_201303012050_0001_m_000003_0/work/.job.jar.crc
+2013-03-01 20:53:55,515 INFO org.apache.hadoop.filecache.TrackerDistributedCacheManager (main): Creating symlink: /mnt/var/lib/hadoop/mapred/taskTracker/hadoop/jobcache/job_201303012050_0001/jars/META-INF <- /mnt/var/lib/hadoop/mapred/taskTracker/hadoop/jobcache/job_201303012050_0001/attempt_201303012050_0001_m_000003_0/work/META-INF
+2013-03-01 20:53:55,530 INFO org.apache.hadoop.filecache.TrackerDistributedCacheManager (main): Creating symlink: /mnt/var/lib/hadoop/mapred/taskTracker/hadoop/jobcache/job_201303012050_0001/jars/org <- /mnt/var/lib/hadoop/mapred/taskTracker/hadoop/jobcache/job_201303012050_0001/attempt_201303012050_0001_m_000003_0/work/org
+2013-03-01 20:53:55,535 INFO org.apache.hadoop.mapred.TaskLog (main): Starting logging for a new task attempt_201303012050_0001_m_000008_0 in the same JVM as that of the first task /mnt/var/log/hadoop/userlogs/job_201303012050_0001/attempt_201303012050_0001_m_000003_0
+2013-03-01 20:53:55,536 WARN org.apache.hadoop.metrics2.impl.MetricsSystemImpl (main): MapTask metrics system already initialized!
+2013-03-01 20:53:55,536 WARN org.apache.hadoop.metrics2.impl.MetricsSystemImpl (main): Source name jvm already exists!
+2013-03-01 20:53:55,558 INFO org.apache.hadoop.mapred.MapTask (main): Host name: domU-12-31-39-06-25-35.compute-1.internal
+2013-03-01 20:53:55,638 INFO org.apache.hadoop.mapred.Task (main):  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@300429
+2013-03-01 20:53:55,650 INFO org.apache.hadoop.mapred.Task (main): Cleaning up job
+2013-03-01 20:53:55,650 INFO org.apache.hadoop.mapred.Task (main): Committing job
+2013-03-01 20:53:55,650 INFO org.apache.hadoop.mapred.DirectFileOutputCommitter (main): Nothing to clean up since no temporary files were written.
+2013-03-01 20:53:55,781 INFO org.apache.hadoop.fs.s3native.NativeS3FileSystem (main): Creating new file 's3n://alexcp-e185-assign03-p4-output/output/_SUCCESS' in S3
+2013-03-01 20:53:55,912 INFO org.apache.hadoop.fs.s3native.Jets3tNativeFileSystemStore (main): s3.putObject alexcp-e185-assign03-p4-output output/_SUCCESS 0
+2013-03-01 20:53:55,916 INFO org.apache.hadoop.mapred.Task (main): Task:attempt_201303012050_0001_m_000008_0 is done. And is in the process of commiting
+2013-03-01 20:53:58,569 INFO org.apache.hadoop.mapred.Task (main): Task 'attempt_201303012050_0001_m_000008_0' done.
+2013-03-01 20:53:58,570 INFO org.apache.hadoop.mapred.TaskLogsTruncater (main): Initializing logs' truncater with mapRetainSize=-1 and reduceRetainSize=-1

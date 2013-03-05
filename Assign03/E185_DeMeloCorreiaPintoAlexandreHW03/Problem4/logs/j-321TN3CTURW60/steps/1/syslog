@@ -1,0 +1,36 @@
+2013-03-01 20:52:45,747 INFO org.apache.hadoop.mapred.JobClient (main): Default number of map tasks: null
+2013-03-01 20:52:45,747 INFO org.apache.hadoop.mapred.JobClient (main): Setting default number of map tasks based on cluster size to : 8
+2013-03-01 20:52:45,747 INFO org.apache.hadoop.mapred.JobClient (main): Default number of reduce tasks: 3
+2013-03-01 20:52:47,928 INFO org.apache.hadoop.security.ShellBasedUnixGroupsMapping (main): add hadoop to shell userGroupsCache
+2013-03-01 20:52:47,929 INFO org.apache.hadoop.mapred.JobClient (main): Setting group to hadoop
+2013-03-01 20:52:48,203 INFO com.hadoop.compression.lzo.GPLNativeCodeLoader (main): Loaded native gpl library
+2013-03-01 20:52:48,213 WARN com.hadoop.compression.lzo.LzoCodec (main): Could not find build properties file with revision hash
+2013-03-01 20:52:48,214 INFO com.hadoop.compression.lzo.LzoCodec (main): Successfully loaded & initialized native-lzo library [hadoop-lzo rev UNKNOWN]
+2013-03-01 20:52:48,238 WARN org.apache.hadoop.io.compress.snappy.LoadSnappy (main): Snappy native library is available
+2013-03-01 20:52:48,238 INFO org.apache.hadoop.io.compress.snappy.LoadSnappy (main): Snappy native library loaded
+2013-03-01 20:52:48,450 INFO org.apache.hadoop.mapred.FileInputFormat (main): Total input paths to process : 2
+2013-03-01 20:52:49,542 INFO org.apache.hadoop.streaming.StreamJob (main): getLocalDirs(): [/mnt/var/lib/hadoop/mapred]
+2013-03-01 20:52:49,542 INFO org.apache.hadoop.streaming.StreamJob (main): Running job: job_201303012050_0001
+2013-03-01 20:52:49,542 INFO org.apache.hadoop.streaming.StreamJob (main): To kill this job, run:
+2013-03-01 20:52:49,542 INFO org.apache.hadoop.streaming.StreamJob (main): /home/hadoop/bin/hadoop job  -Dmapred.job.tracker=10.241.23.229:9001 -kill job_201303012050_0001
+2013-03-01 20:52:49,543 INFO org.apache.hadoop.streaming.StreamJob (main): Tracking URL: http://domU-12-31-39-05-14-17.compute-1.internal:9100/jobdetails.jsp?jobid=job_201303012050_0001
+2013-03-01 20:52:50,553 INFO org.apache.hadoop.streaming.StreamJob (main):  map 0%  reduce 0%
+2013-03-01 20:53:12,642 INFO org.apache.hadoop.streaming.StreamJob (main):  map 13%  reduce 0%
+2013-03-01 20:53:15,657 INFO org.apache.hadoop.streaming.StreamJob (main):  map 25%  reduce 0%
+2013-03-01 20:53:18,663 INFO org.apache.hadoop.streaming.StreamJob (main):  map 38%  reduce 0%
+2013-03-01 20:53:21,688 INFO org.apache.hadoop.streaming.StreamJob (main):  map 50%  reduce 0%
+2013-03-01 20:53:24,695 INFO org.apache.hadoop.streaming.StreamJob (main):  map 63%  reduce 0%
+2013-03-01 20:53:27,701 INFO org.apache.hadoop.streaming.StreamJob (main):  map 75%  reduce 0%
+2013-03-01 20:53:28,704 INFO org.apache.hadoop.streaming.StreamJob (main):  map 82%  reduce 0%
+2013-03-01 20:53:30,709 INFO org.apache.hadoop.streaming.StreamJob (main):  map 82%  reduce 7%
+2013-03-01 20:53:31,712 INFO org.apache.hadoop.streaming.StreamJob (main):  map 88%  reduce 7%
+2013-03-01 20:53:34,719 INFO org.apache.hadoop.streaming.StreamJob (main):  map 100%  reduce 7%
+2013-03-01 20:53:36,723 INFO org.apache.hadoop.streaming.StreamJob (main):  map 100%  reduce 8%
+2013-03-01 20:53:40,735 INFO org.apache.hadoop.streaming.StreamJob (main):  map 100%  reduce 19%
+2013-03-01 20:53:42,740 INFO org.apache.hadoop.streaming.StreamJob (main):  map 100%  reduce 22%
+2013-03-01 20:53:43,743 INFO org.apache.hadoop.streaming.StreamJob (main):  map 100%  reduce 44%
+2013-03-01 20:53:45,747 INFO org.apache.hadoop.streaming.StreamJob (main):  map 100%  reduce 67%
+2013-03-01 20:53:52,762 INFO org.apache.hadoop.streaming.StreamJob (main):  map 100%  reduce 78%
+2013-03-01 20:53:55,768 INFO org.apache.hadoop.streaming.StreamJob (main):  map 100%  reduce 100%
+2013-03-01 20:54:01,798 INFO org.apache.hadoop.streaming.StreamJob (main): Job complete: job_201303012050_0001
+2013-03-01 20:54:01,798 INFO org.apache.hadoop.streaming.StreamJob (main): Output: s3n://alexcp-e185-assign03-p4-output/output
